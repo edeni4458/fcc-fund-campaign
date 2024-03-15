@@ -1,7 +1,6 @@
 import React from 'react'
 import fccLogo from '../z_images/fcc_logo.jpg'
 import '../header/header.css'
-
 const Header = () => {
     return (
         <header className='header_main-container'>

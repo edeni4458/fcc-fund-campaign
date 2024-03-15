@@ -1,0 +1,38 @@
+.sectionII_main-container {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.sectionII_title {
+
+}
+
+
+
+.sectionII_mission-container {
+
+}
+
+.main_photo_mission-container {
+    display: flex;
+}
+
+.photo_mission-container {
+    width: 25%;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    /* box-shadow: 1px 1px lightgray; */
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 6rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    height: 100%;
+    text-align: center;
+}
+
+.photo_mission-container > img{
+    height: 15rem;
+    padding: 5px;
+    border-radius: 8px;
+}
