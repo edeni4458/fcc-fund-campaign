@@ -1,6 +1,7 @@
 import React from 'react'
 import '../section_I/sectionI.css'
 
+
 const SectionI = () => {
     return (
         <div className='sectionI_main-container'>

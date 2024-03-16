@@ -12,7 +12,7 @@
     /* box-shadow: 1px 1px lightgray; */
     border-radius: 10px;
     margin-top: 5px;
-    padding: 6rem;
+    padding: 4rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
     height: 100%;
     text-align: center;
@@ -20,7 +20,7 @@
 
 .sectionI_heading {
     border-bottom: 1px solid black;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     padding-bottom: 10px;
 }
@@ -32,6 +32,11 @@
 .sectionI_heading-II {
     padding: 15px;
     color: rgb(128,104,104);
+    text-transform: uppercase;
+}
+
+.sectionI_heading-II > h3 {
+    line-height: 3rem;
 }
 
 .sectionI_heading-III {
