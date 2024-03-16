@@ -1,7 +1,6 @@
 .sectionII_main-container {
     margin: 0 auto;
     padding: 2rem;
-
 }
 
 .sectionII_title {
@@ -58,17 +57,148 @@
     font-size: large;
 }
 
-
+/* Know Part */
 .sub-section_testimony {
+    text-align: center;
+    padding: 2rem;
+}
 
+.sub-section_testimony > p {
+    color: rgb(128,104,104);
+    font-size: larger;
+    text-shadow: 0 0 2px lightgray;
+}
+
+.sub-section_testimony-know  {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 2rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    height: 100%;
+    width: 75rem;
+    background-image: url(../z_images/bg-img-2.jpg);
+    background-repeat: no-repeat;
+    background-position:top ;
+    
+}
+
+.know-pic-container {
+    width: 35rem;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 #know-word-pic {
     height: 25rem;
+    width: 35rem;
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+
+#know-word-pic:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
+    transform: scale(1.2);
+}
+
+.testimony-know {
+    padding: 3rem;
+}
+
+.testimony-know > p {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 5px lightgray;
+}
+
+ol > li {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(128,104,104);
+    text-shadow: 0 0 5px whitesmoke;
+
+}
+/* Live Part */
+.sub-section_testimony-live {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 2rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    height: 35rem;
+    width: 75rem;
+    background-image: url(../z_images/bg-img-2.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+.testimony-live {
+    padding: 3rem;
+}
+
+.testimony-live > p {
+    font-size: 20px;
+    text-shadow: 0 0 5px lightgray;
+}
+
+.live-pic-container {
+    width: 15rem;
+    overflow: hidden;
+    border-radius: 10px;
 }
 #live-fam-pic {
     height: 35rem;
+    transition: transform .5s ease;
+    border-radius: 10px;
 }
+#live-fam-pic:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
+    transform: scale(1.2);
+}
+
+/* Love Part */
+
+.sub-section_testimony-love {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 2rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    height: 100%;
+    width: 75rem;
+    background-image: url(../z_images/bg-img-2.jpg);
+    background-repeat: no-repeat;
+    background-position:left ;
+}
+
+.love-pic-container {
+    width: 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 #love-yal-pic {
     height: 25rem;
+    transition: transform .5s ease;
+    border-radius: 10px; 
 }
+
+#love-yal-pic:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
+    transform: scale(1.2);
+}
+
