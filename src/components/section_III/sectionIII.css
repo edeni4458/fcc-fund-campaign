@@ -1,0 +1,77 @@
+.sectionIII_main-container {
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+
+.sectionIII-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionIII-container > h1 {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    
+}
+
+.fund-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(128,104,104);
+    text-shadow: 0 0 5px lightgray;
+}
+
+#goal-tag {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    border-radius: 3px;
+    width: 25%;
+    color: rgb(104,104,104);
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.fund-container > p {
+    font-size: larger;
+}
+
+.fund_video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#fund-video {
+    border-radius: 10px;
+    height: 25rem;
+    width: 50rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+}
+
+.fund_video-container {
+    font-weight: 600;
+    color: rgb(128,104,104);
+    text-shadow: 0 0 5px lightgray;
+}
+
+.fund_video-container > h4 {
+    font-size: 25px;
+}
+
+.fund_video-container > p {
+    font-size: larger;
+}

@@ -91,13 +91,13 @@ const SectionII = () => {
                         <div className='love-pic-container'>
                             <img id='love-yal-pic' src={loveYal} alt='' />
                         </div>
-                        <div className='testimony-know'>
+                        <div className='testimony-love'>
                             <p>Love: Our Neighborhood</p>
                             <ol className='list-know'>
                                 <li>Day at The Park</li>
                                 <li>Family Paint and Sip night</li>
                                 <li>Coat Drive (2k coats 4 yrs)</li>
-                                <li>BookBag Drive</li>
+                                <li>Bookbag Drive</li>
                                 <li>Giving essentials during Covid</li>
                                 <li>Serve families of fire victims 2022 (15k given out)</li>
                                 <li>ESL: 45 students a week; W African
@@ -109,12 +109,10 @@ const SectionII = () => {
                             </ol>
                         </div>
                     </div>
-                    <hr />
-                    <div>
-                        <p>“That big old building sitting there is how you project the gospel forward in your city,” - Mark Dever</p>
-                        <p>"Generally speaking, city churches can’t purchase historic properties on their own. They will need kingdom-minded benefactors who embrace this vision of the gospel in the city and the church’s role in promoting the common good. Who will help churches buy or remain in their kingdom outposts?" - Duke Kwon</p>
+                    <div className='quote-container'>
+                        <p>“That big old building sitting there is how you project the gospel forward in your city.” <br />- Mark Dever</p>
+                        <p>"Generally speaking, city churches can’t purchase historic properties on their own. They will need kingdom-minded benefactors who embrace this vision of the gospel in the city and the church’s role in promoting the common good. Who will help churches buy or remain in their kingdom outposts?" <br />- Duke Kwon</p>
                     </div>
-                    <hr />
                 </div>
             </section>
         </div>

@@ -80,7 +80,7 @@
     margin-top: 5px;
     padding: 2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
-    height: 100%;
+    height: 28rem;
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ ol > li {
     margin-top: 5px;
     padding: 2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
-    height: 35rem;
+    height: 28rem;
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
@@ -143,21 +143,23 @@ ol > li {
 }
 
 .testimony-live {
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .testimony-live > p {
     font-size: 20px;
+    font-weight: 600;
     text-shadow: 0 0 5px lightgray;
 }
 
 .live-pic-container {
-    width: 15rem;
+    width: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 #live-fam-pic {
-    height: 35rem;
+    height: 25rem;
+    width: 20rem;
     transition: transform .5s ease;
     border-radius: 10px;
 }
@@ -178,7 +180,7 @@ ol > li {
     margin-top: 5px;
     padding: 2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
-    height: 100%;
+    height: 28rem;
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
@@ -189,6 +191,16 @@ ol > li {
     width: 30rem;
     overflow: hidden;
     border-radius: 10px;
+}
+
+.testimony-love {
+    padding: 3rem;
+}
+
+.testimony-love > p {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 5px lightgray;
 }
 
 #love-yal-pic {
@@ -202,3 +214,18 @@ ol > li {
     transform: scale(1.2);
 }
 
+.quote-container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 3rem;
+    width: 52rem;
+    text-align: center;
+    color: rgb(128,104,104);
+    font-weight: 600;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.quote-container > p {
+    font-size: 20px;
+}

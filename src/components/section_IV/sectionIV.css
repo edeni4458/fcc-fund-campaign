@@ -1,0 +1,59 @@
+.sectionIV_main-container {
+    background-image: url(../z_images/our-values-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(155, 153, 153);
+}
+
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.middle-container {
+    padding-top: 10rem;
+}
+.middle-container >h1 {
+    color: white;
+    text-shadow: 0 0 10px lightgray;
+    font-weight: 700;
+    font-size: 5rem;
+    border-bottom: 2px solid black;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.container_elements {
+    background: linear-gradient(180deg, rgba(1, 79, 117, 0.797) 0%, rgba(0, 48, 110, 1) 100%);
+    color: white;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 2rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    height: 40%;
+    width: 29rem;
+}
+
+.container_elements:hover {
+    
+}
