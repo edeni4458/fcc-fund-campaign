@@ -1,39 +1,62 @@
 import React from 'react'
 import '../section_V/sectionV.css'
-import ImageSlider from './ImageSlider'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const slides = [
-    { url: "https://mcusercontent.com/896f3c9eb24d187e42f9531bc/images/adec791f-b28e-8e6b-19ba-024663664f11.jpeg" },
-    { url: "https://mcusercontent.com/896f3c9eb24d187e42f9531bc/_compresseds/86ec99c9-6686-9902-e530-c8ba3cab76c2.jpeg" },
-    { url: "https://mcusercontent.com/896f3c9eb24d187e42f9531bc/_compresseds/d1e52b9b-33ba-4959-c2b0-da66f514c010.jpeg" },
-    { url: "https://mcusercontent.com/896f3c9eb24d187e42f9531bc/_compresseds/a2bb4263-7028-26f9-2431-c3e466e0a169.jpeg" },
-    { url: "https://mcusercontent.com/896f3c9eb24d187e42f9531bc/_compresseds/467cd56e-2b99-22ee-bf54-7dcbfc7ddc67.jpeg" }
-];
-
-const containerStyles = {
-    width: "500px",
-    height: "280px",
-    margin: "0 auto",
-}
+import bldImg1 from '../z_images/bld-img-1.jpeg';
+import bldImg2 from '../z_images/bld-img-2.jpeg';
+import bldImg3 from '../z_images/bld-img-3.jpeg';
+import bldImg4 from '../z_images/bld-img-4.jpeg';
+import bldImg5 from '../z_images/bld-img-5.jpeg';
 
 const SectionV = () => {
+
+    const settings = {
+
+        focusOnSelect: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        dots: true,
+        infinite: true,
+        speed: 500,
+
+    };
     return (
-        <div>
-            <section>
-                <div>
+        <div className='sectionV_main-container'>
+            <section className='section-container'>
+                <div className='bld-container'>
                     <h1>Desired Property</h1>
-                    <hr />
-                    <div>
+                    <div className='bld-info-container'>
                         <p>Address: 4725 Park Avenue, Bronx NY, 10469</p>
-                        <ul>
+                        <ul className='bld-list'>
                             <li>3 Floors</li>
                             <li>Seats over 300</li>
                             <li>Limited Parking</li>
                         </ul>
                     </div>
-                    <div style={containerStyles}>
-                        <ImageSlider slides={slides}/>
-                    </div>
+                </div>
+                <div className='building_images'>
+                    <Slider {...settings}>
+                        <div className='slider_image-container'>
+                            <img src={bldImg1} alt='Church Building Image1 ' />
+                        </div>
+                        <div className='slider_image-container'>
+                            <img src={bldImg2} alt='Church Building Image1 ' />
+                        </div>
+                        <div className='slider_image-container'>
+                            <img src={bldImg3} alt='Church Building Image1 ' />
+                        </div>
+                        <div className='slider_image-container'>
+                            <img src={bldImg4} alt='Church Building Image1 ' />
+                        </div>
+                        <div className='slider_image-container'>
+                            <img src={bldImg5} alt='Church Building Image1 ' />
+                        </div>
+                        {/* Add more slides as needed */}
+                    </Slider>
                 </div>
             </section>
         </div>

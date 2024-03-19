@@ -1,0 +1,27 @@
+.z_footer_main-container {
+    background-image: url(../z_images/knowing_HIS_word.jpg);
+    background-repeat: no-repeat;
+    height: 25rem;
+    margin-top: 10rem;
+    /* Add the blur effect */
+    /* filter: blur(8px);
+    -webkit-filter: blur(1px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.z_footer-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.z_footer-container > h4 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgb(128,104,104);
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
