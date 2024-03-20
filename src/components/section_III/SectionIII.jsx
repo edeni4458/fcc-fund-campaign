@@ -12,7 +12,7 @@ const SectionIII = () => {
                 </div>
                 <div className='fund_video-container'>
                     <h4>How can you partner with us in this gospel work?</h4>
-                    <button className='btn btn-dark'>Donate Now</button>
+                    <button className='btn btn-success'>Donate Now</button>
                     <iframe id='fund-video' src="https://www.youtube.com/embed/bL3mashs3Do?si=sNEdT8Ny-dppLaoj" title="FCC Building Vision Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <p>Watch our vision for a new building.</p>
                 </div>

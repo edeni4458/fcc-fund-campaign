@@ -21,7 +21,7 @@ const SectionII = () => {
                             <h2>Know</h2>
                             <p>Devoted to God's word</p>
                         </div>
-                        <div id='middle-container' className='photo_mission-container'>
+                        <div className='photo_mission-container'>
                             <img src={fccImg2} alt='' />
                             <h2>Live</h2>
                             <p>Live like a family</p>
