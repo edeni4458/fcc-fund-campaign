@@ -2,6 +2,9 @@
     margin: 0 auto;
     padding: 2rem;
     margin-top: 10rem;
+    border: 3px solid rgb(128,104,104);
+    background: linear-gradient(180deg, rgba(1, 78, 117, 0.431) 0%, rgba(0, 48, 110, 0.214) 100%);
+
 }
 
 .sectionIII-container {
@@ -13,13 +16,15 @@
 }
 
 .sectionIII-container > h1 {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     padding: 1rem;
     text-align: center;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     text-transform: uppercase;
-    
+    color: rgb(128,104,104);
+    text-shadow: 0 0 px black;
+    font-weight: 600;
 }
 
 .fund-container {
@@ -30,18 +35,19 @@
     text-align: center;
     font-size: larger;
     font-weight: 600;
-    color: rgb(128,104,104);
-    text-shadow: 0 0 5px lightgray;
+    color:white;
+    /* text-shadow: 0 0 5px lightgray; */
 }
 
 #goal-tag {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
     border-radius: 3px;
     width: 25%;
-    color: rgb(104,104,104);
+    color: white;
     margin: 0 auto;
     padding: 5px;
     font-size: 25px;
+    font-weight: none;
 }
 
 .fund-container > p {
@@ -59,13 +65,13 @@
     border-radius: 10px;
     height: 25rem;
     width: 50rem;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
 }
 
 .fund_video-container {
     font-weight: 600;
-    color: rgb(128,104,104);
-    text-shadow: 0 0 5px lightgray;
+    color: white;
+    /* text-shadow: 0 0 5px lightgray; */
 }
 
 .fund_video-container > h4 {
@@ -73,5 +79,6 @@
 }
 
 .fund_video-container > p {
-    font-size: larger;
+    font-size: 30px;
+    color: rgb(128,104,104);
 }
