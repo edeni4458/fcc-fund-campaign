@@ -1,6 +1,10 @@
 import React from 'react'
 import fccLogo from '../z_images/fcc_logo.jpg'
 import '../header/header.css'
+import EmailJs from './EmailJs'
+
+
+
 const Header = () => {
     return (
         <header className='header_main-container'>
@@ -12,6 +16,7 @@ const Header = () => {
                         <button className='btn btn-dark'>Donate</button>
                         <h4>Select "FCC Building Fund" to designate donation for building.</h4>
                     </div>
+                    <EmailJs/>
                 </div>
             </div>
         </header>

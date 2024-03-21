@@ -1,9 +1,9 @@
 .header_main-container {
     padding: 2rem;
-    background-image: url(../z_images/city-street-1.jpg);
+    background-image: url(../z_images/fcc-header-bg.jpg);
     background-size:cover;
     background-repeat:no-repeat;
-    height: 50rem;
+    height: 65rem;
 }
 
 .header_sub-container {

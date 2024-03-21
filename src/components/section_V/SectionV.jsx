@@ -15,7 +15,6 @@ const SectionV = () => {
     const settings = {
 
         focusOnSelect: true,
-        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
