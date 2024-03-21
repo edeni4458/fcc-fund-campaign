@@ -16,8 +16,8 @@ const Header = () => {
                         <button className='btn btn-dark'>Donate</button>
                         <h4>Select "FCC Building Fund" to designate donation for building.</h4>
                     </div>
-                    <EmailJs/>
                 </div>
+                <EmailJs />
             </div>
         </header>
     )
