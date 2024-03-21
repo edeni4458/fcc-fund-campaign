@@ -44,7 +44,7 @@
     gap: 5rem;
 }
 .container_elements {
-    background: linear-gradient(180deg, rgba(1, 79, 117, 0.797) 0%, rgba(0, 48, 110, 1) 100%);
+    background: rgba(46, 38, 38, 0.849);
     color: white;
     margin: 0 auto;
     border: 1px solid lightgray;

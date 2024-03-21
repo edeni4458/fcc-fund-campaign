@@ -2,8 +2,7 @@
     margin: 0 auto;
     padding: 2rem;
     margin-top: 10rem;
-    border: 3px solid rgb(128,104,104);
-    background: #2b2d42;
+    /* border: 3px solid rgb(128,104,104); */
 
 }
 
@@ -22,7 +21,7 @@
     width: 50%;
     margin: 0 auto;
     text-transform: uppercase;
-    color: white;
+    color:  #2b2d42;;
     text-shadow: 0 0 px black;
     font-weight: 500;
 }
@@ -35,15 +34,15 @@
     text-align: center;
     font-size: larger;
     font-weight: 600;
-    color:white;
+    color: #2b2d42;
     /* text-shadow: 0 0 5px lightgray; */
 }
 
 #goal-tag {
-    box-shadow: 0 0 3px 2px white;
+    box-shadow: 0 0 3px 2px  #2b2d42;
     border-radius: 3px;
     width: 35%;
-    color: white;
+    color:  #2b2d42;
     margin: 0 auto;
     padding: 5px;
     font-size: 35px;
@@ -70,7 +69,7 @@
 
 .fund_video-container {
     font-weight: 600;
-    color: white;
+    color:  #2b2d42;
     /* text-shadow: 0 0 5px lightgray; */
 }
 
@@ -80,5 +79,5 @@
 
 .fund_video-container > p {
     font-size: 30px;
-    color: rgb(181, 150, 150);
+    color: rgb(46, 38, 38);
 }
