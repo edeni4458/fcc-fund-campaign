@@ -40,12 +40,12 @@ const EmailJs = () => {
             <form className='form-container' onSubmit={sendEmail} action="" method="post">
                 <div className='label_main-container'>
                     <div className='label-container'>
-                        <label name='name'>email address</label>
-                        <input required onChange={(e) => setEmail(e.target.value)} type="text" value={name} />
+                        <label name='email'>email address</label>
+                        <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                     </div>
                     <div className='label-container'>
-                        <label name='email' >first name</label>
-                        <input required onChange={(e) => setName(e.target.value)} type="email" value={email} />
+                        <label name='name' >first name</label>
+                        <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                     </div>
                     <div className='label-container'>
                         <label name='note'>last name</label>
