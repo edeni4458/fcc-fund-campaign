@@ -41,11 +41,11 @@ const EmailJs = () => {
                 <div className='label_main-container'>
                     <div className='label-container'>
                         <label name='name'>email address</label>
-                        <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
+                        <input required onChange={(e) => setEmail(e.target.value)} type="text" value={name} />
                     </div>
                     <div className='label-container'>
                         <label name='email' >first name</label>
-                        <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
+                        <input required onChange={(e) => setName(e.target.value)} type="email" value={email} />
                     </div>
                     <div className='label-container'>
                         <label name='note'>last name</label>
