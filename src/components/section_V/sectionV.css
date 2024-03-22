@@ -47,8 +47,8 @@
     width: 50%;
     display: flex;
     margin: 0 auto;
-    background: rgba(46, 38, 38, 0.386);
-    border-radius: 10px;
+    background: rgba(46, 38, 38, 0.098);
+    border-radius: 5px;
 }
 
 .slider_image-container{
