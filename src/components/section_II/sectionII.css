@@ -9,10 +9,11 @@
     margin: 0 auto;
     padding-bottom: 10px;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
-
+.sectionII_title > h1 {
+    text-align: center;
+}
 
 /* .sectionII_mission-container {
 
@@ -20,13 +21,13 @@
 
 .main_photo_mission-container {
     display: flex;
-    width: 65rem;
+    width: 55%;
     height: 28rem;
     margin: 0 auto;
 }
 
 .photo_mission-container {
-    min-width: 10rem;
+    width: 17.2rem;
     height: 22rem;
     background-color: white;
     color: rgb(128,104,104);
@@ -225,4 +226,59 @@ ol > li {
 
 .quote-container > p {
     font-size: 20px;
+}
+
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .sectionII_title {
+        text-align: center;
+    }
+
+    .main_photo_mission-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 35rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo_mission-container > img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    /* Know Part */
+
+    .sub-section_testimony-know {
+        flex-direction: column;
+        height: 100%;
+        width: 100%
+    }
+
+    #know-word-pic {
+        height: 15rem;
+        width: 50%;
+    }
+    
+    #know-word-pic:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+
 }

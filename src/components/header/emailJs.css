@@ -22,6 +22,11 @@
 .label-container {
     padding: 2px;
 }
+label{
+    padding: 2px;
+    font-weight: 600;
+    font-size: larger;
+}
 
 .submit-btn {
     color: white;
@@ -38,4 +43,31 @@
     margin-bottom: 1rem;
     border-radius: 5px;
     /* border: none; */
+}
+
+
+
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .emailJs_main-container {
+        width: 100%;
+    }
+    
+    .submit-btn {
+        font-size: 15px;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+
 }

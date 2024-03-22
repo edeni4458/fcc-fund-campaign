@@ -50,3 +50,43 @@
     font-size: 20px;
     font-style: italic;
 }
+
+
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .sectionI-container {
+        width: 100%;
+    }
+
+    .sectionI_heading {
+        width: 55%;
+    }
+
+    .sectionI_heading-II > h3 {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .sectionI_heading-III {
+        width: 100%;
+    }
+
+    .sectionI_heading-III > h4 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+
+}
