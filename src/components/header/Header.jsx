@@ -1,5 +1,5 @@
 import React from 'react'
-import fccLogo from '../z_images/fcc_logo.jpg'
+import fccLogo from '../z_images/fcc_logo-2.png'
 import '../header/header.css'
 import EmailJs from './EmailJs'
 
