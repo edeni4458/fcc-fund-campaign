@@ -1,8 +1,18 @@
 .sectionV_main-container {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 15rem;
+    padding: 3rem;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bld-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 .bld-container > h1 {
     border-bottom: 1px solid black;
@@ -11,6 +21,7 @@
     text-shadow: 0 0 10px gray;
     margin: 0 auto;
     text-transform: uppercase;
+    width: 75%;
 }
 
 .bld-info-container > p {
@@ -18,13 +29,17 @@
     font-weight: 600;
     color: rgb(128,104,104);
     text-shadow: 0 0 5px lightgray;
+    width: 75%;
+    margin: 0 auto;
 }
 
-.bld-list {
+.bld-list{
     font-size: 25px;
     font-weight: 600;
     color: rgb(128,104,104);
     text-shadow: 0 0 5px lightgray;
+    width: 12%;
+    margin: 0 auto;
 }
 
 .building_images {
@@ -54,3 +69,49 @@
 
 }
 
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .bld-container {
+        width: 100%;
+    }
+
+    .bld-container > h1 {
+        width: 100%;
+    }
+
+    .bld-info-container > p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .bld-list {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .building_images {
+        width: 100%;
+    }
+
+    .slider_image-container {
+        width: 100%;
+    }
+
+    .slider_image-container > img {
+        height: 25rem;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+
+}

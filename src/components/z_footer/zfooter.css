@@ -25,3 +25,30 @@
     font-size: 3rem;
     padding-top: 2rem;
 }
+
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .z_footer_main-container {
+        height: 80vh;
+        /* padding: 1rem; */
+    }
+
+    .z_footer-container > h4 {
+        font-size: 4vh;
+        padding-top: 5rem;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+
+}

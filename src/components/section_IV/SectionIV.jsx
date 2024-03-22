@@ -4,6 +4,9 @@ import '../section_IV/sectionIV.css'
 const SectionIV = () => {
     return (
         <div className='sectionIV_main-container'>
+            <div className='heading-container'>
+                <h1>Our Values</h1>
+            </div>
             <section className='section-container'>
                 <div className='top-container'>
                     <div className='container_elements'>
@@ -22,9 +25,6 @@ const SectionIV = () => {
                             <li>Covenant membership</li>
                         </ul>
                     </div>
-                </div>
-                <div className='middle-container'>
-                    <h1>Our Values</h1>
                 </div>
                 <div className='bottom-container'>
                     <div className='container_elements'>
