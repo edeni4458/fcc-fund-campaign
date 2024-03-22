@@ -11,20 +11,17 @@
 .form-container {
     display: flex;
     flex-direction: column;
-
 }
 
 .label_main-container {
     display: flex;
-    margin-bottom: 5px;
+    flex-direction: column;
 }
 
 .label-container {
     padding: 2px;
     margin-bottom: 1rem;
 }
-
-
 
 .submit-btn {
     color: white;
@@ -35,4 +32,8 @@
     border-radius: 8px;
     font-size: 20px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.632);
+}
+
+.label_main-container > input {
+    margin-bottom: 1rem;
 }

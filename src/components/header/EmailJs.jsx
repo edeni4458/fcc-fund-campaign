@@ -41,16 +41,16 @@ const EmailJs = () => {
                 <div className='label_main-container'>
                     <div className='label-container'>
                         <label name='email'>email address</label>
-                        <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                     </div>
+                        <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                     <div className='label-container'>
                         <label name='name' >first name</label>
-                        <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                     </div>
+                        <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                     <div className='label-container'>
                         <label name='note'>last name</label>
-                        <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                     </div>
+                        <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                 </div>
                 <input className='submit-btn' type='submit' value='Make a Pledge' />
             </form>
