@@ -1,0 +1,45 @@
+.goalbar {
+    width: 100%;
+    position: fixed;
+
+}
+
+.goal-letter {
+    transform: rotate(90deg);
+    transform: scaleY(-1);
+    margin: 25px;
+    padding-right: 20px;
+    border: 1px solid #2b2d42;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.632);
+    width: 25px;
+    height: 500px;
+    border-radius: 10px;
+
+
+}
+
+.goal-filler {
+    width: 23.5px;
+    max-height: 499px;
+    border-radius: 9px;
+    background: linear-gradient(180deg, rgba(0, 107, 160, 0.6) 0%, rgba(0, 48, 110, 0.55) 100%);
+    transform: rotate(90deg);
+    transform: scaleY(-1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+}
+
+#goalbar_text {
+    transform: rotate(90deg);
+    transform: scaleY(-1);  
+    margin-top: 26.5rem;
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+    position: absolute;
+    color: white;
+    text-shadow: 5px white;
+    font-weight: 600;
+    /* width: 20px;
+    height: 500px;
+    border: 1px solid purple; */
+}
+

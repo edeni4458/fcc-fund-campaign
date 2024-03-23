@@ -46,8 +46,8 @@
     width: 50%;
     display: flex;
     margin: 0 auto;
-    background: rgba(46, 38, 38, 0.098);
-    border-radius: 5px;
+    /* background: rgba(46, 38, 38, 0.098); */
+    border-radius: 10px;
 }
 
 .slider_image-container{
@@ -57,15 +57,24 @@
 
 .slider_image-container > img {
     image-orientation:flip;
-    height: 35rem;
+    height: 30rem;
     width: 100%;
     background: #000;
-    /* background-size:cover; */
 }
 
 .slick-slider {
     width: 100%;
+}
 
+.slider_image-container > img {
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+}
+
+button.slick-arrow {
+    background-color: #0000007f;
+    border-radius: 50%;
+    border: none;
 }
 
 /* Ipad Pro */
