@@ -1,7 +1,6 @@
 .sectionV_main-container {
     width: 100%;
-    margin-top: 15rem;
-    padding: 3rem;
+
 }
 
 .section-container {
@@ -80,6 +79,11 @@
 
 /* Phone */
 @media screen and (max-width: 550px) {
+    .sectionV_main-container {
+        margin-top: -15rem;
+        padding: 3rem;
+    }
+    
     .bld-container {
         width: 100%;
     }
