@@ -10,7 +10,6 @@
 
 .bld-container {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .bld-container > h1 {
@@ -46,13 +45,12 @@
     width: 50%;
     display: flex;
     margin: 0 auto;
-    /* background: rgba(46, 38, 38, 0.098); */
     border-radius: 10px;
 }
 
 .slider_image-container{
     width: 80%;
-    background-size:cover;
+
 }
 
 .slider_image-container > img {
@@ -60,21 +58,21 @@
     height: 30rem;
     width: 100%;
     background: #000;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
 }
 
 .slick-slider {
     width: 100%;
 }
 
-.slider_image-container > img {
-    border-radius: 5px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
-}
-
 button.slick-arrow {
     background-color: #0000007f;
     border-radius: 50%;
-    border: none;
+}
+
+button.slick-arrow:hover {
+    background-color:#0000007f;
 }
 
 /* Ipad Pro */
@@ -89,7 +87,7 @@ button.slick-arrow {
 /* Phone */
 @media screen and (max-width: 550px) {
     .sectionV_main-container {
-        margin-top: -15rem;
+        margin-top: -20rem;
         padding: 3rem;
     }
     
@@ -113,6 +111,7 @@ button.slick-arrow {
 
     .building_images {
         width: 100%;
+        margin-top: -5rem;
     }
 
     .slider_image-container {
@@ -120,7 +119,7 @@ button.slick-arrow {
     }
 
     .slider_image-container > img {
-        height: 25rem;
+        height: 20rem;
     }
 }
 

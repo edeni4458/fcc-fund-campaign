@@ -52,6 +52,7 @@
 }
 
 
+
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
     
@@ -65,7 +66,7 @@
 @media screen and (max-width: 550px) {
     .header_main-container {
         width: 100%;
-        height: 63rem;
+        height: auto;
     }
 
     .header_sub-container {
@@ -87,5 +88,24 @@
 
 /* An Even Smaller Phone */
 @media screen and (max-width: 360px) {
+    .header_main-container {
+        width: 100%;
+        height: auto;
+    }
 
+    .header_sub-container {
+        width: 100%;
+    }
+
+    .header_container-elements>img{
+        width: 8rem;
+    }
+
+    .header_container-elements>h2 {
+        font-size: 18px;
+    }
+
+    .header_container-button>h4 {
+        font-size: 18px;
+    }
 }

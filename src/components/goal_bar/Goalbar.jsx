@@ -19,13 +19,13 @@ export default function Goalbar() {
         // setHeight("5%")
     }
 
-    function handleOnClick() {
-        if (money === height_50) {
-            setHeigh(parseInt(heigh) + parseInt(heigh) )
+    // function handleOnClick() {
+    //     if (money === height_50) {
+    //         setHeigh(parseInt(heigh) + parseInt(heigh) )
 
-        }
-        // setMarg(marg - 18.8)
-    }
+    //     }
+    //     // setMarg(marg - 18.8)
+    // }
 
 
 
@@ -35,7 +35,7 @@ export default function Goalbar() {
                 <p id='goalbar_text'>5,000,000</p>
                 <div className='goal-filler' style={{ height: heigh + "%" }} ></div>
             </div>
-            <button onClick={handleOnClick} className='btn btn-dark'>Donate</button>
+            {/* <button onClick={handleOnClick} className='btn btn-dark'>Donate</button> */}
         </div>
     )
 }

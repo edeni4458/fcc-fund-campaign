@@ -87,6 +87,63 @@
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
+    .sectionI_main-container {
+        margin-bottom: 12rem;
+    }
+    
+    .sectionI-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionI_heading {
+        width: 60%;
+    }
+
+    .sectionI_heading-II > h3 {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    .sectionI_heading-III {
+        width: 100%;
+    }
+
+    .sectionI_heading-III > h4 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+}
+
+/* An Even, even Smaller Phone */
+@media screen and (max-width: 320px) {
+    .sectionI_main-container {
+        margin-bottom: 30rem;
+    }
+    
+    .sectionI-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionI_heading {
+        width: 90%;
+    }
+
+    .sectionI_heading-II > h3 {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .sectionI_heading-III {
+        width: 100%;
+    }
+
+    .sectionI_heading-III > h4 {
+        font-size: 14px;
+        line-height: 25px;
+    }
 
 }

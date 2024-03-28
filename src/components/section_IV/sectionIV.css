@@ -62,6 +62,10 @@
     width: 29rem;
 }
 
+.container_elements > h2 {
+    text-align: center
+}
+
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
 
@@ -112,6 +116,50 @@
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
+    .sectionIV_main-container {
+        margin-bottom: 20rem;
+        height: 75rem;
+        padding: 0.2rem;
+    }
 
+    .heading-container {
+        width: 78%;
+    }
+
+    .heading-container > h1 {
+        font-size:2rem;
+    }
+
+
+    .section-container {
+        flex-direction: none;
+        width: 100%;
+        padding-top: 10rem;
+    }
+
+    .top-container {
+        width: 100%;
+        gap: 2rem;
+    }
+    
+    .bottom-container {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .container_elements {
+        width: 10rem;
+        padding: 2px;
+        height: 10rem;
+
+        background: linear-gradient(180deg, rgba(0, 107, 160, 0.297) 0%, rgba(0, 48, 110, 0.32) 100%);
+    }
+
+    .container_elements > h2 {
+        font-size: 16px;
+    }
+    .container_elements >ul, li {
+        font-size: 12px;
+    }
 }
