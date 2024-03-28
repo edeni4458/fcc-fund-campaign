@@ -1,7 +1,7 @@
 .goalbar {
     width: 10%;
     position: fixed;
-
+    padding: 5rem;
 }
 
 .goal-letter {
@@ -14,7 +14,7 @@
     width: 25px;
     height: 500px;
     border-radius: 10px;
-
+    background-color: #2b2d42;
 
 }
 
@@ -22,7 +22,7 @@
     width: 23.5px;
     max-height: 499px;
     border-radius: 9px;
-    background: linear-gradient(180deg, rgba(0, 107, 160, 0.6) 0%, rgba(0, 48, 110, 0.55) 100%);
+    background: linear-gradient(180deg, rgba(0, 160, 19, 0.6) 0%, rgba(0, 48, 110, 0.55) 100%);
     transform: rotate(90deg);
     transform: scaleY(-1);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
@@ -43,3 +43,29 @@
     border: 1px solid purple; */
 }
 
+/* Ipad Pro */
+@media screen and (max-width: 1024px) {
+
+}
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    .goalbar {
+        width: 10%;
+        position: fixed;
+        padding: 5px;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 360px) {
+    .goalbar {
+        width: 10%;
+        position: fixed;
+        padding: 5px;
+    }
+}
