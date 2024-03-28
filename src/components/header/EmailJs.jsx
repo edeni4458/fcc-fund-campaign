@@ -32,7 +32,11 @@ const EmailJs = () => {
             })
     }
 
+    const [ pledge, setPledge ] = useState("Make a Pledge") 
 
+    const handleClick = () => {
+        setPledge("Thank you for your Pledge")
+    }
 
 
     return (
@@ -52,7 +56,7 @@ const EmailJs = () => {
                     </div>
                         <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                 </div>
-                <input className='submit-btn' type='submit' value='Make a Pledge' />
+                <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} />
             </form>
         </section>
     )

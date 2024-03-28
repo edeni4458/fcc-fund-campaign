@@ -14,7 +14,7 @@
     width: 25px;
     height: 500px;
     border-radius: 10px;
-    background-color: #2b2d42;
+    background-color: #2b2d4289;
 
 }
 
@@ -22,7 +22,7 @@
     width: 23.5px;
     max-height: 499px;
     border-radius: 9px;
-    background: linear-gradient(180deg, rgba(0, 160, 19, 0.6) 0%, rgba(0, 48, 110, 0.55) 100%);
+    background: linear-gradient(180deg, rgba(1, 224, 27, 0.6) 0%, rgba(3, 109, 248, 0.55) 100%);
     transform: rotate(90deg);
     transform: scaleY(-1);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);

@@ -4,7 +4,16 @@ import { useState } from 'react'
 
 
 export default function Goalbar() {
-    const [heigh, setHeigh] = useState("5")
+
+    const [message, setMessage] = useState("Donate")
+
+    // let message = "Donate"
+    handleOnClick = () => {
+        setMessage("Thank you")
+    }
+
+
+    const [heigh, setHeigh] = useState("4")
     // const [marg, setMarg] = useState("376px")
     const [money, setMoney] = useState(2500000)
     // let money = 250000
@@ -21,13 +30,11 @@ export default function Goalbar() {
 
     function handleOnClick() {
         if (money === height_50) {
-            setHeigh(parseInt(heigh) + parseInt(heigh) )
+            setHeigh(parseInt(heigh) + 10 )
 
         }
         // setMarg(marg - 18.8)
     }
-
-
 
     return (
         <div className='goalbar'>
@@ -35,7 +42,8 @@ export default function Goalbar() {
                 <p id='goalbar_text'>5,000,000</p>
                 <div className='goal-filler' style={{ height: heigh + "%" }} ></div>
             </div>
-            <button onClick={handleOnClick} className='btn btn-dark'>Donate</button>
+            {/* <button onClick={handleOnClick} className='btn btn-dark'>Donate</button> */}
+            <button className='submit-btn' onClick={handleOnClick}>{ message }</button>
         </div>
     )
 }
