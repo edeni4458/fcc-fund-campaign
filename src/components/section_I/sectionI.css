@@ -63,6 +63,10 @@
 
 /* Phone */
 @media screen and (max-width: 550px) {
+    .sectionI_main-container {
+        margin-bottom: 10rem;
+    }
+    
     .sectionI-container {
         width: 100%;
     }
@@ -87,9 +91,9 @@
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
     .sectionI_main-container {
-        margin-bottom: 12rem;
+        margin-bottom: 22rem;
     }
     
     .sectionI-container {
@@ -120,7 +124,7 @@
 /* An Even, even Smaller Phone */
 @media screen and (max-width: 320px) {
     .sectionI_main-container {
-        margin-bottom: 30rem;
+        /* margin-bottom: 30rem; */
     }
     
     .sectionI-container {
