@@ -97,4 +97,8 @@
         position: fixed;
         padding: 5px;
     }
+
+    .submit-btn-Bar {
+        font-size: 12px;
+    }
 }
