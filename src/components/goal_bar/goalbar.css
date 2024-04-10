@@ -91,7 +91,7 @@
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     .goalbar {
         width: 10%;
         position: fixed;
