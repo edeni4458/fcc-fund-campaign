@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import React from 'react'
 import "./goalbar.css"
 import { useState } from 'react'
@@ -30,20 +31,32 @@ export default function Goalbar() {
 
     function handleOnClick() {
         if (money === height_50) {
-            setHeigh(parseInt(heigh) + 10 )
+            setHeigh(parseInt(heigh) + 10)
 
         }
         // setMarg(marg - 18.8)
     }
+    const { ref: goalBarRef, inView: goalBarView } = useInView({
+        thresehold: 0,
+        delay: 9000
+    });
+
+    const [redBackColor, setRedBackColor] = useState()
+
+    const redBackground = "red"
+    
+
+    const blueBackground = "blue"
+
 
     return (
-        <div className='goalbar'>
-            <div className='goal-letter'>
+        <div ref={goalBarRef} className='goalbar' >
+            <div style={goalBarView ?{opacity:1}:{backgroundColor:'red'}} className='goal-letter'>
                 <p id='goalbar_text'>5,000,000</p>
                 <div className='goal-filler' style={{ height: heigh + "%" }} ></div>
             </div>
             {/* <button onClick={handleOnClick} className='btn btn-dark'>Donate</button> */}
-            <button className='submit-btn' onClick={handleOnClick}>{ message }</button>
+            <button className='submit-btn-Bar' onClick={handleOnClick}>{message}</button>
         </div>
     )
 }

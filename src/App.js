@@ -4,11 +4,13 @@ import './App.css';
 import Goalbar from './components/goal_bar/Goalbar';
 
 function App() {
+
+
   return (
     <div className="App">
       <Goalbar/>
       <Header/>
-      <SectionI/>
+      <SectionI /> 
       <SectionII/>
       <SectionIII/>
       <SectionIV/>

@@ -5,6 +5,13 @@
     height: 43rem;
 }
 
+
+.animateContainer {
+    background-color: aquamarine;
+}
+
+
+
 .sectionI-container {
     width: 50%;
     background-color: white;

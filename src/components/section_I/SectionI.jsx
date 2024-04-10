@@ -2,9 +2,19 @@ import React from 'react'
 import '../section_I/sectionI.css'
 
 
+
 const SectionI = () => {
+
+
+
+
+
+
     return (
         <div className='sectionI_main-container'>
+            <span className='sectionI_mainContainer'>
+
+            </span>
             <section className='sectionI-container'>
                 <div className='sectionI_heading'>
                     <h1>Our Story</h1>
