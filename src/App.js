@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Goalbar/>
       <Header/>
-      <SectionI /> 
+      <SectionI/> 
       <SectionII/>
       <SectionIII/>
       <SectionIV/>

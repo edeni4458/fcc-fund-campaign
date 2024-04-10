@@ -8,7 +8,7 @@ import EmailJs from './EmailJs'
 const Header = () => {
     
     return (
-        <header  className='header_main-container'>
+        <Header  className='header_main-container'>
             <div className='header_sub-container' >
                 <div className='header_container-elements'>
                     <img src={fccLogo} alt='Fordham-Community-Church-Logo' />
@@ -20,7 +20,7 @@ const Header = () => {
                 </div>
                 <EmailJs />
             </div>
-        </header>
+        </Header>
     )
 }
 

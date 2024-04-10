@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
-import React from 'react'
+import React,  { useState } from 'react'
 import "./goalbar.css"
-import { useState } from 'react'
+
 
 
 export default function Goalbar() {
@@ -41,12 +41,7 @@ export default function Goalbar() {
         delay: 9000
     });
 
-    const [redBackColor, setRedBackColor] = useState()
 
-    const redBackground = "red"
-    
-
-    const blueBackground = "blue"
 
 
     return (
