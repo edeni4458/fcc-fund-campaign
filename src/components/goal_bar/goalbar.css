@@ -87,6 +87,7 @@
         width: 10%;
         position: fixed;
         padding: 5px;
+        padding-left: 2.9rem;
     }
 }
 
@@ -96,6 +97,7 @@
         width: 10%;
         position: fixed;
         padding: 5px;
+        padding-left: 1.9rem;
     }
 
     .submit-btn-Bar {
