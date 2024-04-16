@@ -1,7 +1,8 @@
-import { Header, SectionI, SectionII, SectionIII, SectionIV, SectionV, Zfooter } from './components';
+import { Goalbar, Header, SectionI, SectionII, SectionIII, SectionIV, SectionV, Zfooter } from './components';
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
-import Goalbar from './components/goal_bar/Goalbar';
+import 'matchmedia-polyfill';
+import 'matchmedia-polyfill/matchMedia.addListener';
 
 function App() {
 

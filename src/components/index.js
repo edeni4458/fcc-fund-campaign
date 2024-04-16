@@ -1,3 +1,4 @@
+export { default as Goalbar } from "./goal_bar/Goalbar";
 export { default as Header } from './header/Header';
 export { default as SectionI } from './section_I/SectionI';
 export { default as SectionII } from './section_II/SectionII';
