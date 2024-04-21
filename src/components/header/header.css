@@ -4,19 +4,23 @@
     background-color: #2F4F4F;
     background-size:cover;
     background-repeat:no-repeat;
-    height: 80rem;
+    height: 62rem;
 }
 
 .header_sub-container {
     width: 99%;
-    background-color: rgba(255, 255, 255, 0.498);
+    
+    /* background-color: rgba(255, 255, 255, 0.498); */
+     background-color: rgba(228, 223, 223, 0.938); 
     margin: 0 auto;
     border: 1px solid lightgray;
     border-radius: 10px;
     margin-top: -20px;
     padding: 2rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
-    height: 70%;
+    height: 60rem;
+    /* backdrop-filter: blur(20px); */
+    opacity: 1;
 }
 
 
