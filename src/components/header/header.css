@@ -4,7 +4,7 @@
     background-color: #2F4F4F;
     background-size:cover;
     background-repeat:no-repeat;
-    height: 62rem;
+    height: 52rem;
 }
 
 .header_sub-container {
@@ -18,7 +18,7 @@
     margin-top: -20px;
     padding: 2rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
-    height: 60rem;
+    height: 50rem;
     /* backdrop-filter: blur(20px); */
     /* added opacity */
     opacity: 1;
