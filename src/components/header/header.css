@@ -20,6 +20,7 @@
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
     height: 60rem;
     /* backdrop-filter: blur(20px); */
+    /* added opacity */
     opacity: 1;
 }
 
