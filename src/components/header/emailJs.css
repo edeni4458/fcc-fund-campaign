@@ -7,6 +7,21 @@
     margin-top: 2rem;
     width: 65%;
 }
+#dialog{
+    margin-top:5px ;
+    margin-left: 400px;
+    width: 400px;
+    background-color: beige;
+    animation: fade-out 0.7s ease-out;
+    border-radius: 10px;
+}
+dialog[open] {
+    animation: fade-in 0.7s ease-out;
+  }
+  
+dialog[open]::backdrop {
+    animation: backdrop-fade-in 0.7s ease-out forwards;
+  }
 
 .form-container {
     display: flex;
@@ -26,6 +41,38 @@ label{
     padding: 2px;
     font-weight: 600;
     font-size: larger;
+}
+.pledge-button{
+    display: flex;
+    justify-content: center;
+    padding-right: 500px;
+    align-items: center;
+    text-align: center;
+}
+.submit-pledge-button-container{
+   container: flex;
+   flex:auto;
+   flex-direction: row;
+   
+}
+.submit-pledge{
+    border-radius: 10px;
+    background-color: rgb(19, 19, 19);
+    width: 80px;
+    height: 40px;
+    color:white;
+    font-size: small;
+    
+
+}
+.cancel-pledge{
+    border-radius: 10px;
+    background-color: rgb(223, 15, 15);
+    width: 80px;
+    height: 40px;
+    color:white;
+    font-size: x-small;
+
 }
 
 .submit-btn {

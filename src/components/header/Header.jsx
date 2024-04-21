@@ -15,7 +15,7 @@ const Header = () => {
                     <h2>Help us to own some brick in the Bronx in order to help reshape the spiritual climate of the Bronx through planting gospel centered churches</h2>
                     <div className='header_container-button'>
                         <button className='submit-btn'>Donate Now</button>
-                        <h4>Select "FCC Building Fund" to designate donation for building.</h4>
+                        <h4 className='h4-text-building-fund'>Select "FCC Building Fund" to designate donation for building.</h4>
                     </div>
                 </div>
                 <EmailJs />
