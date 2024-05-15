@@ -1,5 +1,4 @@
 .sectionIV_main-container {
-    background-image: url(../z_images/our-values-bg-2.jpg);
     background-repeat: no-repeat;
     background-position:top ;
     background-size: cover ;
@@ -8,63 +7,81 @@
     padding: 3rem;
     height: 85rem;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .heading-container {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
-
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .heading-container > h1 {
-    color: white;
-    text-shadow: 0 0 10px lightgray;
-    text-align: center;
     font-weight: 700;
-    font-size: 3rem;
-    border-bottom: 2px solid black;
-    padding: 1rem;
 }
 
-.section-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.image-and-p-main-container {
     margin: 0 auto;
-    gap: 10rem;
-    padding-top: 15rem;
-}
-
-.top-container {
+    height: 40%;
     display: flex;
-    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
-    gap: 5rem;
 }
 
-
-.bottom-container {
+.image-and-p-container {
+    height: 100%;
+    width: 22rem;
+    padding: 10px;
     display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 5rem;
+    justify-content: center;
 }
-.container_elements {
-    background: linear-gradient(180deg, rgba(0, 107, 160, 0.297) 0%, rgba(0, 48, 110, 0.32) 100%);
-    color: white;
-    margin: 0 auto;
-    /* border: 1px solid lightgray; */
+
+.image-and-p {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-container {
+    height: 50%;
+}
+
+.image-container > img {
+    border: 20px solid lightgray;
     border-radius: 10px;
-    margin-top: 5px;
-    padding: 2rem;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
-    height: 15rem;
-    width: 29rem;
 }
 
-.container_elements > h2 {
-    text-align: center
+
+.p-container > p {
+    font-size: large;
+    color: rgba(0, 0, 0, 0.639);
+    font-weight: 500;
 }
+
+.p-container > h2 {
+    
+    font-weight: 600;
+}
+
+.p-container {
+    height: 50%;
+    width: 100%;
+}
+
+.img-edit {
+    height: 15.5rem;
+    width: 19.9rem;
+}
+
+#center-image-edit {
+    height: 15.5rem;
+    width: 19.9rem;
+}
+
 
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
@@ -90,29 +107,6 @@
     .heading-container > h1 {
         font-size:2rem;
     }
-
-
-    .section-container {
-        flex-direction: none;
-        width: 100%;
-        padding-top: 10rem;
-    
-        
-    }
-
-    .top-container {
-        width: 100%;
-    }
-    
-    .bottom-container {
-        width: 100%;
-    }
-
-    .container_elements {
-        width: 15rem;
-        padding: 8px;
-        background: linear-gradient(180deg, rgba(0, 107, 160, 0.297) 0%, rgba(0, 48, 110, 0.32) 100%);
-    }
 }
 
 /* An Even Smaller Phone */
@@ -131,35 +125,4 @@
         font-size:2rem;
     }
 
-
-    .section-container {
-        flex-direction: none;
-        width: 100%;
-        padding-top: 10rem;
-    }
-
-    .top-container {
-        width: 100%;
-        gap: 2rem;
-    }
-    
-    .bottom-container {
-        width: 100%;
-        gap: 2rem;
-    }
-
-    .container_elements {
-        width: 10rem;
-        padding: 2px;
-        height: 10rem;
-
-        background: linear-gradient(180deg, rgba(0, 107, 160, 0.297) 0%, rgba(0, 48, 110, 0.32) 100%);
-    }
-
-    .container_elements > h2 {
-        font-size: 16px;
-    }
-    .container_elements >ul, li {
-        font-size: 12px;
-    }
 }

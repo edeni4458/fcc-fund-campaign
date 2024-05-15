@@ -1,5 +1,8 @@
 import React from 'react'
-import '../section_IV/sectionIV.css'
+import './sectionIV.css'
+import know from "../z_images/Know.jpg"
+import love from "../z_images/Love.jpg"
+import live from "../z_images/Live.jpg"
 
 const SectionIV = () => {
     return (
@@ -7,42 +10,41 @@ const SectionIV = () => {
             <div className='heading-container'>
                 <h1>Our Values</h1>
             </div>
-            <section className='section-container'>
-                <div className='top-container'>
-                    <div className='container_elements'>
-                        <h2>Expository Preaching</h2>
-                        <ul>
-                            <li>Biblical faithfulness</li>
-                            <li>Doctrinal clarity</li>
-                            <li>Gospel centrality</li>
-                        </ul>
-                    </div>
-                    <div className='container_elements'>
-                        <h2>Meaningful Membership</h2>
-                        <ul>
-                            <li>Born again membership</li>
-                            <li>Every member ministry</li>
-                            <li>Covenant membership</li>
-                        </ul>
+            <div className='image-and-p-main-container'>
+                <div className='image-and-p-container'>
+                    <div className='image-and-p'>
+                        <div className='image-container'>
+                            <img className='img-edit' src={know} alt=''/>
+                        </div>
+                        <div className='p-container'>
+                            <h2>Know</h2>
+                            <p>Knowing God's word<br/> and the Gospel.</p>
+                        </div>
                     </div>
                 </div>
-                <div className='bottom-container'>
-                    <div className='container_elements'>
-                        <h2>Outwardly Oriented</h2>
-                        <ul>
-                            <li>Faithful presence in neighborhood</li>
-                            <li>Restorative and corrective</li>
-                            <li>Evangelism </li>
-                        </ul>
-                    </div>
-                    <div className='container_elements'>
-                        <h2>Contextual</h2>
-                        <ul>
-                            <li>Flavor of Bronx in our style</li>
-                        </ul>
+                <div className='image-and-p-container'>
+                    <div className='image-and-p'>
+                        <div className='image-container'>
+                            <img id='center-image-edit' src={live} alt=''/>
+                        </div>
+                        <div className='p-container'>
+                            <h2>Live</h2>
+                            <p>Living like family,<br/> following Jesus<br/> together.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <div className='image-and-p-container'>
+                    <div className='image-and-p'>
+                        <div className='image-container'>
+                            <img className='img-edit'  src={love} alt=''/>
+                        </div>
+                        <div className='p-container'>
+                            <h2>Love</h2>
+                            <p>Loving our neighbors<br/> in word and deed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
