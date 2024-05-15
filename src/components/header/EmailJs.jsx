@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import '../header/emailJs.css'
 
 
 const EmailJs = () => {
-
+  const popRef = useRef()
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [ pledge, setPledge ] = useState(false) 
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -32,14 +33,27 @@ const EmailJs = () => {
             })
     }
 
-    const [ pledge, setPledge ] = useState("Make a Pledge") 
+    
 
     const handleClick = () => {
-        setPledge("Thank you for your Pledge")
+        setPledge(true)
+        closeModal()
     }
 
+    function openModal(){
+    
+      popRef.current.showModal()
+   }
+   function closeModal(){
 
+      popRef.current.close()
+   }
+
+console.log(pledge)
     return (
+        <div className="dialog-con">
+    <dialog id="dialog" ref={popRef}>
+    
         <section className='emailJs_main-container'>
             <form className='form-container' onSubmit={sendEmail} action="" method="post">
                 <div className='label_main-container'>
@@ -56,9 +70,22 @@ const EmailJs = () => {
                     </div>
                         <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                 </div>
-                <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} />
+                {/* <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} /> */}
+                <div className='pledge-buttons'>
+                <div className='submit-pledge-button-container'>
+                 <button onClick={handleClick} className='submit-pledge'>Submit Pledge</button>
+                </div>
+                 <button onClick={closeModal} className='cancel-pledge'>Cancel</button>
+                </div>
             </form>
         </section>
+     </dialog>
+      <div className='header_container-button'>
+      <button onClick={openModal} className='submit-btn'>Make a Pledge</button>
+     
+      {pledge? <p>Thank you for your Pledge</p>:null}
+      </div>
+     </div>
     )
 }
 

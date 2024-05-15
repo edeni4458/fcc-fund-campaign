@@ -16,12 +16,12 @@
     width: 50%;
     background-color: white;
     margin: 0 auto;
-    border: 1px solid lightgray;
+    border: 0.2px solid lightgray;
     /* box-shadow: 1px 1px lightgray; */
     border-radius: 10px;
     margin-top: 5px;
     padding: 4rem;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632);
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
     height: 100%;
     text-align: center;
 }
