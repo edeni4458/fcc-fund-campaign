@@ -16,15 +16,19 @@ const SectionI = () => {
 
             </span>
             <section className='sectionI-container'>
+                <div className='both_headings'>
                 <div className='sectionI_heading'>
-                    <h1>Our Story</h1>
+                    <h1>Why a building?</h1>
                 </div>
                 <div className='sectionI_heading-II '>
-                    <h3>Building a kingdom family that displays the love of Jesus.</h3>
+                    <h3>We want to own a building in the Bronx in order to help reshape the spiritual climate through planting gosple centered Churches</h3>
+                </div>
                 </div>
                 <div className='sectionI_heading-III'>
-                    <h4>We are awed at what God has done as FCC is now 4 years old and how the Lord has established this new church. FCC started as a bible study in an apartment. Our initial bible study had 11 people. We dedicated ourselves to living our DNA and values. God in turn began to open doors. We saw a church formed around the preaching of God’s word that began to have presence in our neighborhood.</h4>
+                <iframe width="860" height="455" src="https://www.youtube.com/embed/bL3mashs3Do?si=ZNQVrHzC8Lb_OH1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                {/* <iframe width="420" height="315" src="https://youtu.be/FoGg4vIu31c?si=sBAg5JeOqUTjsMyK" title="description"></iframe> */}
                 </div>
+                <p>“That big old building sitting there is how you project the gospel forward in your city.” <br></br>Mark Dever, Pastor, Capitol Hill Baptist Church</p>
             </section>
         </div>
     )
