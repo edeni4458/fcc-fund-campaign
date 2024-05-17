@@ -7,21 +7,23 @@
     margin-top: 2rem;
     width: 65%;
 }
-#dialog{
-    margin-top:5px ;
+
+#dialog {
+    margin-top: 5px;
     margin-left: 400px;
     width: 400px;
     background-color: beige;
     animation: fade-out 0.7s ease-out;
     border-radius: 10px;
 }
+
 dialog[open] {
     animation: fade-in 0.7s ease-out;
-  }
-  
+}
+
 dialog[open]::backdrop {
     animation: backdrop-fade-in 0.7s ease-out forwards;
-  }
+}
 
 .form-container {
     display: flex;
@@ -37,12 +39,14 @@ dialog[open]::backdrop {
 .label-container {
     padding: 2px;
 }
-label{
+
+label {
     padding: 2px;
     font-weight: 600;
     font-size: larger;
 }
-.pledge-buttons{
+
+.pledge-buttons {
     display: flex;
     justify-content: center;
     /* padding-right: 200px; */
@@ -52,50 +56,33 @@ label{
     gap: 10px;
 
 }
+
 /* .submit-pledge-button-container{
 
-   
+
 } */
-.submit-pledge{
+.submit-pledge {
     border-radius: 10px;
     background-color: rgb(19, 19, 19);
     width: 80px;
     height: 40px;
-    color:white;
+    color: white;
     font-size: small;
-    
+
 
 }
-.cancel-pledge{
+
+.cancel-pledge {
     border-radius: 10px;
     background-color: rgb(223, 15, 15);
     width: 80px;
     height: 40px;
-    color:white;
-    font-size: small;
-
-}
-
-.submit-btn {
     color: white;
-    background-color: black;
-    padding: 1rem;
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.632);
-    transition: all 0.3s;
+    font-size: small;
 }
 
-.submit-btn:hover {
-    transform: translateY(-10px);
-    background-color: rgba(255, 255, 255, 0.473);
-    color: black;
-}
 
-.label_main-container > input {
+.label_main-container>input {
     margin-bottom: 1rem;
     border-radius: 5px;
     /* border: none; */
@@ -104,26 +91,21 @@ label{
 
 
 /* Ipad Pro */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {}
 
-}
 /* Ipad Mini */
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
 
 /* Phone */
 @media screen and (max-width: 550px) {
     .emailJs_main-container {
         width: 100%;
     }
-    
+
     .submit-btn {
         font-size: 15px;
     }
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 360px) {
-
-}
+@media screen and (max-width: 360px) {}

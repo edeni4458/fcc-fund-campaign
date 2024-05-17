@@ -1,52 +1,45 @@
 .sectionIII_main-container {
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 10rem;
-    /* border: 3px solid rgb(128,104,104); */
-
+    margin-top: 2rem;
 }
 
 .sectionIII-container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     margin: 0 auto;
-    width: 80%;
+    margin-top: 3rem;
+    width: 50%;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .sectionIII-container > h1 {
-    border-bottom: 1px solid black;
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    text-transform: uppercase;
-    color:  #2b2d42;;
-    text-shadow: 0 0 px black;
-    font-weight: 500;
+    margin-top: 2.5rem;
+    font-weight: 700;
 }
 
 .fund-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0 auto;
     text-align: center;
     font-size: larger;
     font-weight: 600;
-    color: #2b2d42;
-    /* text-shadow: 0 0 5px lightgray; */
 }
 
 #goal-tag {
-    box-shadow: 0 0 3px 2px  #2b2d42;
-    border-radius: 3px;
-    width: 35%;
-    color:  #2b2d42;
-    margin: 0 auto;
-    padding: 5px;
+    margin-top: -25px;
+    width: 100%;
     font-size: 35px;
-    font-weight: none;
 }
 
 .fund-container > p {
@@ -60,26 +53,44 @@
     gap: 2rem;
 }
 
+.submit-btn {
+    width: 10rem;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    /* transform: translateY(-10px); */
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
 #fund-video {
     border-radius: 10px;
-    height: 25rem;
-    width: 50rem;
+    height: 27rem;
+    width: 58rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
 }
 
 .fund_video-container {
     font-weight: 600;
-    color:  #2b2d42;
-    /* text-shadow: 0 0 5px lightgray; */
 }
 
-.fund_video-container > h4 {
-    font-size: 25px;
+.fund_video-container > h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -15px;
 }
 
 .fund_video-container > p {
-    font-size: 30px;
-    color: rgb(46, 38, 38);
+    font-size: 20px;
+    text-align: center;
 }
 
 /* Ipad Pro */
