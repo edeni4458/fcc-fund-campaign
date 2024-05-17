@@ -3,6 +3,7 @@ import './sectionIV.css'
 import know from "../z_images/Know.jpg"
 import love from "../z_images/Love.jpg"
 import live from "../z_images/Live.jpg"
+import OurStory from './OurStory'
 
 const SectionIV = () => {
     return (
@@ -45,6 +46,7 @@ const SectionIV = () => {
                     </div>
                 </div>
             </div>
+            <OurStory/>
         </div>
     )
 }

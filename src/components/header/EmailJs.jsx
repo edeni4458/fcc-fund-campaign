@@ -4,11 +4,11 @@ import '../header/emailJs.css'
 
 
 const EmailJs = () => {
-  const popRef = useRef()
+    const popRef = useRef()
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    const [ pledge, setPledge ] = useState(false) 
+    const [pledge, setPledge] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -33,59 +33,59 @@ const EmailJs = () => {
             })
     }
 
-    
+
 
     const handleClick = () => {
         setPledge(true)
         closeModal()
     }
 
-    function openModal(){
-    
-      popRef.current.showModal()
-   }
-   function closeModal(){
+    function openModal() {
 
-      popRef.current.close()
-   }
+        popRef.current.showModal()
+    }
+    function closeModal() {
 
-console.log(pledge)
+        popRef.current.close()
+    }
+
+    console.log(pledge)
     return (
         <div className="dialog-con">
-    <dialog id="dialog" ref={popRef}>
-    
-        <section className='emailJs_main-container'>
-            <form className='form-container' onSubmit={sendEmail} action="" method="post">
-                <div className='label_main-container'>
-                    <div className='label-container'>
-                        <label name='email'>email address</label>
-                    </div>
-                        <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
-                    <div className='label-container'>
-                        <label name='name' >first name</label>
-                    </div>
-                        <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
-                    <div className='label-container'>
-                        <label name='note'>last name</label>
-                    </div>
-                        <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
-                </div>
-                {/* <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} /> */}
-                <div className='pledge-buttons'>
-                <div className='submit-pledge-button-container'>
-                 <button onClick={handleClick} className='submit-pledge'>Submit Pledge</button>
-                </div>
-                 <button onClick={closeModal} className='cancel-pledge'>Cancel</button>
-                </div>
-            </form>
-        </section>
-     </dialog>
-      <div className='header_container-button'>
-      <button onClick={openModal} className='submit-btn'>Make a Pledge</button>
-     
-      {pledge? <p>Thank you for your Pledge</p>:null}
-      </div>
-     </div>
+            <dialog id="dialog" ref={popRef}>
+
+                <section className='emailJs_main-container'>
+                    <form className='form-container' onSubmit={sendEmail} action="" method="post">
+                        <div className='label_main-container'>
+                            <div className='label-container'>
+                                <label name='email'>email address</label>
+                            </div>
+                            <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
+                            <div className='label-container'>
+                                <label name='name' >first name</label>
+                            </div>
+                            <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
+                            <div className='label-container'>
+                                <label name='note'>last name</label>
+                            </div>
+                            <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
+                        </div>
+                        {/* <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} /> */}
+                        <div className='pledge-buttons'>
+                            <div className='submit-pledge-button-container'>
+                                <button onClick={handleClick} className='submit-pledge'>Submit Pledge</button>
+                            </div>
+                            <button onClick={closeModal} className='cancel-pledge'>Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </dialog>
+            <div className='header_container-button'>
+                <button onClick={openModal} className='submit-btn'>Make a Pledge</button>
+
+                {pledge ? <p>Thank you for your Pledge</p> : null}
+            </div>
+        </div>
     )
 }
 
