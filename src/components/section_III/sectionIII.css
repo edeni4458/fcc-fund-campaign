@@ -1,17 +1,21 @@
 .sectionIII_main-container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem;
     margin-top: 10rem;
+    width:1300px;
     /* border: 3px solid rgb(128,104,104); */
 
 }
 
 .sectionIII-container {
     margin: 0 auto;
-    width: 80%;
+    /* width: 1199px; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: -218px;
+    background-color: white;
+    margin-left: -20px;
 }
 
 .sectionIII-container > h1 {
@@ -81,6 +85,10 @@
     font-size: 30px;
     color: rgb(46, 38, 38);
 }
+
+/* .divider{
+    border: 1px solid grey;
+} */
 
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
