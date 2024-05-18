@@ -1,41 +1,26 @@
 .sectionIII_main-container {
     /* margin: 0 auto; */
     padding: 2rem;
-/* <<<<<<< HEAD */
     margin-top: 2rem;
-/* ======= */
-    margin-top: 10rem;
-    width:1300px;
-    /* border: 3px solid rgb(128,104,104); */
+    /* margin-top: 10rem; */
 
-/* >>>>>>> 784d76816d095aeeb6622292b75c538e06b2353c */
 }
 
 .sectionIII-container {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 0 auto;
-/* <<<<<<< HEAD */
     margin-top: 3rem;
-    width: 50%;
+    width: 70%;
     height: 25rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-/* ======= */
-    /* width: 1199px; */
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: -218px;
     background-color: white;
-    margin-left: -20px;
-/* >>>>>>> 784d76816d095aeeb6622292b75c538e06b2353c */
 }
 
 .sectionIII-container > h1 {
-    /* padding: 1rem; */
     text-align: center;
     width: 100%;
     margin: 0 auto;
