@@ -1,12 +1,14 @@
 .sectionIII_main-container {
     /* margin: 0 auto; */
     padding: 2rem;
+/* <<<<<<< HEAD */
     margin-top: 2rem;
+/* ======= */
     margin-top: 10rem;
     width:1300px;
     /* border: 3px solid rgb(128,104,104); */
 
-/* >>>>>>> 784d76816d095aeeb6622292b75c538e06b2353c 
+/* >>>>>>> 784d76816d095aeeb6622292b75c538e06b2353c */
 }
 
 .sectionIII-container {
