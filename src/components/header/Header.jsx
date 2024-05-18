@@ -27,7 +27,7 @@ const Header = () => {
                 </div>
                 <div className='tony-sings'/>
 
-               
+
                 {/* <EmailJs /> */}
             </div>
         </header>

@@ -13,7 +13,7 @@
     /* background-color: rgba(255, 255, 255, 0.498); */
     background-color: #2F4F4F;
     margin: 0 auto;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     border-radius: 10px;
     margin-top: -20px;
     padding: 2rem;
@@ -26,15 +26,12 @@
 
 .fcc-img {
     background-image: url('../z_images/fcc_logo-2.png');
-<<<<<<< HEAD
     background-size: cover;
     border: solid;
     border-color: red;
-=======
     background-size: cover ;
     /* border: solid;
     border-color: red; */
->>>>>>> 2fdc269ad42d3d0b1ce7b2fa2e24e51776e30cb7
     height: 200px;
     width: 200px;
     margin-left: -900px;
@@ -54,16 +51,11 @@
     font-weight: lighter;
 
 }
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 
-.top-header {
+.top-header{
     border: solid;
     border-color: blue;
-=======
-.top-header{
-    /* border: solid;
-    border-color: blue; */
->>>>>>> 2fdc269ad42d3d0b1ce7b2fa2e24e51776e30cb7
     width: 600px;
     height: 200px;
     margin-left: 200px;

@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 
 a {
@@ -40,3 +41,4 @@ a {
     transform: rotate(360deg);
   }
 }
+
