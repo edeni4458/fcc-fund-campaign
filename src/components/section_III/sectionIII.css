@@ -57,11 +57,12 @@
     font-size: larger;
 }
 
-.fund_video-container {
+.fund_buttons-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
+    margin-left: 450px;
 }
 
 #fund-video {

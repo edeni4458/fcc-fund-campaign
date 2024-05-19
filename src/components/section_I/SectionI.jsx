@@ -18,7 +18,7 @@ const SectionI = () => {
             <section className='sectionI-container'>
                 <div className='both_headings'>
                 <div className='sectionI_heading'>
-                    <h1>Why a building?</h1>
+                    <h1 >Why a building?</h1>
                 </div>
                 <div className='sectionI_heading-II '>
                     <h3>We want to own a building in the Bronx in order to help reshape the spiritual climate through planting gosple centered Churches</h3>
