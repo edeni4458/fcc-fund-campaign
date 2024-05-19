@@ -13,7 +13,6 @@ const SectionIV = () => {
             </div>
             <div className='image-and-p-main-container'>
                 <div className='image-and-p-container'>
-
                         <div className='image-container'>
                             <img className='img-edit' src={know} alt='' />
                         </div>
@@ -23,7 +22,6 @@ const SectionIV = () => {
                         </div>
                 </div>
                 <div className='image-and-p-container'>
-
                         <div className='image-container'>
                             <img className='img-edit' src={live} alt='' />
                         </div>
@@ -33,7 +31,6 @@ const SectionIV = () => {
                         </div>
                 </div>
                 <div className='image-and-p-container'>
-
                         <div className='image-container'>
                             <img className='img-edit' src={love} alt='' />
                         </div>

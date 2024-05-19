@@ -22,7 +22,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .image-and-p-container {
@@ -35,18 +34,17 @@
     gap: 15px;
 }
 
-.image-and-p {
-
-}
 
 .image-container {
     height: 100%;
+    width: 98.9%;
+    border-radius: 15px;
+    transition: transform .5s ease;
 
 }
 .image-container:hover {
-
-    box-shadow: 1px 1px 10px blue;
-    
+    transform: scale(1.1);
+    border: 5px solid skyblue;
 }
 
 .image-container > img {
@@ -55,7 +53,6 @@
 }
 
 .p-container {
- 
     height: 25rem;
 }
 
