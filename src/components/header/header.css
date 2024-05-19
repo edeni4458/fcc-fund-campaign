@@ -64,8 +64,9 @@
 .tony-sings {
     background-image: url('../z_images/home pic_2.jpg');
     background-size: 100% 100%;
-    height: 500px;
+    height: 600px;
     width: 100%;
+    margin-top: -50px;
     
 
 }
