@@ -21,7 +21,7 @@ const SectionIII = () => {
                 <div className='fund_buttons-container'>
 
                     <button className='submit-btn'>Donate Now</button>
-                     <EmailJs/>
+                    <EmailJs />
 
 
                 </div>

@@ -13,40 +13,37 @@ const SectionIV = () => {
             </div>
             <div className='image-and-p-main-container'>
                 <div className='image-and-p-container'>
-                    <div className='image-and-p'>
+
                         <div className='image-container'>
-                            <img className='img-edit' src={know} alt=''/>
+                            <img className='img-edit' src={know} alt='' />
                         </div>
                         <div className='p-container'>
                             <h2>Know</h2>
-                            <p>Knowing God's word<br/> and the Gospel.</p>
+                            <p>Knowing God's word<br /> and the Gospel.</p>
                         </div>
-                    </div>
                 </div>
                 <div className='image-and-p-container'>
-                    <div className='image-and-p'>
+
                         <div className='image-container'>
-                            <img id='center-image-edit' src={live} alt=''/>
+                            <img className='img-edit' src={live} alt='' />
                         </div>
                         <div className='p-container'>
                             <h2>Live</h2>
-                            <p>Living like family,<br/> following Jesus<br/> together.</p>
+                            <p>Living like family,<br /> following Jesus together.</p>
                         </div>
-                    </div>
                 </div>
                 <div className='image-and-p-container'>
-                    <div className='image-and-p'>
+
                         <div className='image-container'>
-                            <img className='img-edit'  src={love} alt=''/>
+                            <img className='img-edit' src={love} alt='' />
                         </div>
                         <div className='p-container'>
                             <h2>Love</h2>
-                            <p>Loving our neighbors<br/> in word and deed.</p>
+                            <p>Loving our neighbors<br /> in word and deed.</p>
                         </div>
-                    </div>
                 </div>
             </div>
-            <OurStory/>
+            <OurStory />
         </div>
     )
 }
