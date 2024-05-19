@@ -1,16 +1,15 @@
 .header_main-container {
     padding: 2rem;
-    /* background-image: url(../z_images/fcc-header-bg.jpg); */
     background-color: #2F4F4F;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 52rem;
-    
+
 }
 
 .header_sub-container {
     width: 99%;
-    
+
     /* background-color: rgba(255, 255, 255, 0.498); */
     background-color: #2F4F4F;
     margin: 0 auto;
@@ -25,25 +24,26 @@
     opacity: 1;
 }
 
-.fcc-img{
+.fcc-img {
     background-image: url('../z_images/fcc_logo-2.png');
+    background-size: cover;
+    border: solid;
+    border-color: red;
     background-size: cover ;
     /* border: solid;
     border-color: red; */
     height: 200px;
     width: 200px;
     margin-left: -900px;
-  
-    
 }
 
-.title{
-   
+.title {
     color: aliceblue;
     margin-bottom: 20px;
     text-align: center;
 }
-.buildtext{
+
+.buildtext {
     /* margin-left: -10px; */
     color: rgb(232, 227, 227);
     font-size: large;
@@ -51,15 +51,18 @@
     font-weight: lighter;
 
 }
+/* <<<<<<< HEAD */
+
 .top-header{
-    /* border: solid;
-    border-color: blue; */
+    border: solid;
+    border-color: blue;
     width: 600px;
     height: 200px;
     margin-left: 200px;
     margin-top: -210px;
 }
-.tony-sings{
+
+.tony-sings {
     background-image: url('../z_images/home pic_2.jpg');
     background-size: 100% 100%;
     height: 500px;
@@ -86,9 +89,10 @@
     font-weight: 600;
     color: rgb(58, 47, 47);
 }
-.h4-text-building-fund{
+
+.h4-text-building-fund {
     font-style: italic;
-    font-size: xx-small 
+    font-size: xx-small
 }
 
 .header_container-button {
@@ -109,13 +113,10 @@
 
 
 /* Ipad Pro */
-@media screen and (max-width: 1024px) {
-    
-}
+@media screen and (max-width: 1024px) {}
+
 /* Ipad Mini */
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
 
 /* Phone */
 @media screen and (max-width: 550px) {
@@ -128,7 +129,7 @@
         width: 100%;
     }
 
-    .header_container-elements>img{
+    .header_container-elements>img {
         width: 8rem;
     }
 
@@ -152,7 +153,7 @@
         width: 100%;
     }
 
-    .header_container-elements>img{
+    .header_container-elements>img {
         width: 8rem;
     }
 
