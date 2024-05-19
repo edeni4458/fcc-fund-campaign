@@ -9,7 +9,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .heading-container > h1 {
@@ -41,7 +41,13 @@
 }
 
 .image-container {
-    height: 50%;
+    height: 100%;
+
+}
+.image-container:hover {
+
+    box-shadow: 1px 1px 10px blue;
+    
 }
 
 .image-container > img {
@@ -50,9 +56,10 @@
 }
 
 .p-container {
-    padding-top: 7rem;
+ 
     height: 25rem;
 }
+
 
 .p-container > p {
     font-size: large;
@@ -78,6 +85,7 @@
 #center-image-edit {
     height: 15.5rem;
     width: 19.9rem;
+    margin-top: 24px;
 }
 
 
