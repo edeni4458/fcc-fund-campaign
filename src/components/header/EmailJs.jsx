@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import '../header/emailJs.css'
+import "../section_III/sectionIII.css"
 
 
 const EmailJs = () => {

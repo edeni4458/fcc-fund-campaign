@@ -27,14 +27,14 @@
 .fcc-img {
     background-image: url('../z_images/fcc_logo-2.png');
     background-size: cover;
-    border: solid;
-    border-color: red;
+  
     background-size: cover ;
     /* border: solid;
     border-color: red; */
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-left: -900px;
+    margin-top: -20px;
 }
 
 .title {
@@ -54,12 +54,11 @@
 /* <<<<<<< HEAD */
 
 .top-header{
-    border: solid;
-    border-color: blue;
+   
     width: 600px;
     height: 200px;
     margin-left: 200px;
-    margin-top: -210px;
+    margin-top: -140px;
 }
 
 .tony-sings {
