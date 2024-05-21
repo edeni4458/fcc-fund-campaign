@@ -1,4 +1,4 @@
-import { Header, SectionIII, SectionIV,SectionII } from './components';
+import { Header, SectionIII, SectionIV, SectionII } from './components';
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 
@@ -7,10 +7,10 @@ import './App.css';
 function App() {
 
 
-  if(window.location.pathname === "/detailPage"){
-    return ( <SectionII/>)
+  if (window.location.pathname === "/detailPage") {
+    return (<SectionII />)
 
-}
+  }
 
 
 
@@ -20,24 +20,24 @@ function App() {
   //         window.location.reload();
   //     }
   // }
-  
-//   (function () {
-//     window.onpageshow = function(event) {
-//         if (event.persisted) {
-//             window.location.reload();
-//         }
-//     };
-// })();
-  
- 
-  
 
- 
-    return (
+  //   (function () {
+  //     window.onpageshow = function(event) {
+  //         if (event.persisted) {
+  //             window.location.reload();
+  //         }
+  //     };
+  // })();
+
+
+
+
+
+  return (
     <div className="App">
-      <Header/>
-      <SectionIII/>
-      <SectionIV/>
+      <Header />
+      <SectionIII />
+      <SectionIV />
     </div>
   );
 }
