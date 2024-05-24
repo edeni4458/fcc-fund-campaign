@@ -8,42 +8,33 @@ import { Route, Routes } from 'react-router';
 function App() {
 
 
-
-
-
-  //   window.onload = function() {
-  //     if(!window.location.hash) {
-  //         // window.location = window.location + '#/';
-  //         window.location.reload();
-  //     }
-  // }
-
-  //   (function () {
-  //     window.onpageshow = function(event) {
-  //         if (event.persisted) {
-  //             window.location.reload();
-  //         }
-  //     };
-  // })();
-
-
-
-
-
   return (
     <div className="App">
-     
-    
-
       <Routes>
-        <Route path="/" element={<div>    <Header />,  <SectionIII />, <SectionIV /></div>}></Route>
-      <Route  path="/detailspage" element={<SectionII/>}/>
+        <Route path="/" element={<div><Header /><SectionIII /><SectionIV /></div>}></Route>
+        <Route path="/detailspage" element={<SectionII />} />
       </Routes>
-   
-     
     </div>
   );
 }
 
 
 export default App;
+
+
+//   window.onload = function() {
+//     if(!window.location.hash) {
+//         // window.location = window.location + '#/';
+//         window.location.reload();
+//     }
+// }
+
+//   (function () {
+//     window.onpageshow = function(event) {
+//         if (event.persisted) {
+//             window.location.reload();
+//         }
+//     };
+// })();
+
+

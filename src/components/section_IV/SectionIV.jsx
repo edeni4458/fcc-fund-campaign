@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const SectionIV = () => {
     const navigate = useNavigate()
 
-   
+
 
 
     return (
@@ -19,37 +19,39 @@ const SectionIV = () => {
                 <h1>Our Values</h1>
             </div>
             <div className='image-and-p-main-container'>
-               
-                <div className='image-and-p-container' >
-                <Link to={"/detailspage"}  reloadDocument >
-                    
-                    <div className='image-container'  >
-                        <img className='img-edit' src={know} alt='' />
-                    </div>
-                    <div className='p-container'>
-                        <h2>Know</h2>
-                        <p>Knowing God's word<br /> and the Gospel.</p>
+                <Link to={"/detailspage"} reloadDocument >
+                    <div className='image-and-p-container' >
+                        <div className='image-container'  >
+                            <img className='img-edit' src={know} alt='' />
+                        </div>
+                        <div className='p-container'>
+                            <h2>Know</h2>
+                            <p>Knowing God's word<br /> and the Gospel.</p>
+                        </div>
                     </div>
                 </Link>
-                </div>
-                <div className='image-and-p-container'>
-                    <div className='image-container' >
-                        <img className='img-edit' src={live} alt='' />
+                <Link to={"/detailspage"} reloadDocument >
+                    <div className='image-and-p-container'>
+                        <div className='image-container' >
+                            <img className='img-edit' src={live} alt='' />
+                        </div>
+                        <div className='p-container'>
+                            <h2>Live</h2>
+                            <p>Living like family,<br /> following Jesus together.</p>
+                        </div>
                     </div>
-                    <div className='p-container'>
-                        <h2>Live</h2>
-                        <p>Living like family,<br /> following Jesus together.</p>
+                </Link >
+                <Link to={"/detailspage"} reloadDocument >
+                    <div className='image-and-p-container'>
+                        <div className='image-container'>
+                            <img className='img-edit' src={love} alt='' />
+                        </div>
+                        <div className='p-container'>
+                            <h2>Love</h2>
+                            <p>Loving our neighbors<br /> in word and deed.</p>
+                        </div>
                     </div>
-                </div>
-                <div className='image-and-p-container'>
-                    <div className='image-container'>
-                        <img className='img-edit' src={love} alt='' />
-                    </div>
-                    <div className='p-container'>
-                        <h2>Love</h2>
-                        <p>Loving our neighbors<br /> in word and deed.</p>
-                    </div>
-                </div>
+                </Link>
             </div>
             <OurStory />
         </div>
