@@ -251,6 +251,18 @@ ol > li {
     font-size: 20px;
 }
 
+.goback{
+    border-radius: 120px;
+    color:white;
+    border: solid;
+    border-color: black;
+    width: 80px;
+    height: 40pxs;
+   background-color: black;
+   padding-left: 8.5px;
+   padding-bottom: 2px;
+}
+
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
 
