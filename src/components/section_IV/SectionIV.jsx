@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './sectionIV.css'
 import know from "../z_images/Know.jpg"
 import love from "../z_images/Love.jpg"
 import live from "../z_images/Live.jpg"
 import OurStory from './OurStory'
-import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 
 const SectionIV = () => {
-    const navigate = useNavigate()
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 50;
+            setScrolled(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    },);
 
 
 
@@ -18,9 +30,9 @@ const SectionIV = () => {
             <div className='heading-container'>
                 <h1>Our Values</h1>
             </div>
-            <div className='image-and-p-main-container'>
+            <div className={`image-and-p-main-container ${scrolled ? 'fade-in' : ''}`}>
                 <Link to={"/detailspage"} reloadDocument >
-                    <div className='image-and-p-container' >
+                    <div className='image-and-p-container'>
                         <div className='image-container'  >
                             <img className='img-edit' src={know} alt='' />
                         </div>
