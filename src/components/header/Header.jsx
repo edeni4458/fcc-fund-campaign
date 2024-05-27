@@ -16,7 +16,7 @@ const Header = () => {
                     </div>
                     <div className='top-header'>
                         <h1 className='title'>Fordham Community Church</h1>
-                        <h2 className='buildtext'>Building a Kingdom family that displays the love <br></br> of Jesus</h2>
+                        <h2 className='buildtext'>Building a Kingdom family that displays the love of Jesus</h2>
                     </div>
                 </div>
                 <div className="header-Image">

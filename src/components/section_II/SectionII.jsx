@@ -95,8 +95,7 @@ const SectionII = () => {
                         <p>“That big old building sitting there is how you project the gospel forward in your city.” <br />- Mark Dever</p>
                         <p>"Generally speaking, city churches can’t purchase historic properties on their own. They will need kingdom-minded benefactors who embrace this vision of the gospel in the city and the church’s role in promoting the common good. Who will help churches buy or remain in their kingdom outposts?" <br />- Duke Kwon</p>
                     </div>
-                    <Link to={"/"}>  <div className='goback'>Go Back</div> </Link>
-                 
+                    <Link to={"/"}><div className='goback'>Go Back</div></Link>
                 </div>
             </section>
         </div>

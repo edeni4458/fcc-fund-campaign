@@ -9,7 +9,7 @@ const SectionIII = () => {
                 <h1>Why a building?</h1>
                 <p>We want to own a building in the Bronx in order to help reshape the spiritual climate through planting<br /> gospel centered churches.</p>
                 <iframe id='fund-video' src="https://www.youtube.com/embed/bL3mashs3Do?si=sNEdT8Ny-dppLaoj" title="FCC Building Vision Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <p>“That big old building sitting there is how you project the gospel forward in your city.”<br />Mark Dever, Pastor, Capitol Hill Baptist Church</p>
+                <p>“That big old building sitting there is how you project the gospel forward in your city.”<br /><span id='itally-Mark'>Mark Dever, Pastor, Capitol Hill Baptist Church</span></p>
             </div>
             <section className='sectionIII-container'>
                 {/* <hr className='divider'></hr> */}

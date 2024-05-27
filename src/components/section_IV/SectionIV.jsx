@@ -5,13 +5,14 @@ import love from "../z_images/Love.jpg"
 import live from "../z_images/Live.jpg"
 import OurStory from './OurStory'
 import { Link } from 'react-router-dom'
+import Carousel from './Carousel'
 
 const SectionIV = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 50;
+            const isScrolled = window.scrollY > 10;
             setScrolled(isScrolled);
         };
 
@@ -30,6 +31,7 @@ const SectionIV = () => {
             <div className='heading-container'>
                 <h1>Our Values</h1>
             </div>
+            {/* <Carousel/> */}
             <div className={`image-and-p-main-container ${scrolled ? 'fade-in' : ''}`}>
                 <Link to={"/detailspage"} reloadDocument >
                     <div className='image-and-p-container'>

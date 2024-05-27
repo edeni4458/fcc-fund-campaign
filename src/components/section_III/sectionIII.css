@@ -1,8 +1,6 @@
 .sectionIII_main-container {
-    /* margin: 0 auto; */
     padding: 2rem;
     margin-top: 2rem;
-    /* margin-top: 10rem; */
 
 }
 
@@ -53,18 +51,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: rem;
-    /* margin-left: 450px; */
 }
 
 .submit-btn {
     width: 152px;
-    /* width: 10rem; */
     height: 50px;
     margin: 0 auto;
     color: white;
     background-color: black;
-    /* padding: 1rem; */
     margin-right: 20px;
     border: none;
     border-radius: 8px;
@@ -74,7 +68,6 @@
 }
 
 .submit-btn:hover {
-    /* transform: translateY(-10px); */
     background-color: rgba(0, 0, 0, 0.82);
 }
 
@@ -82,7 +75,11 @@
     border-radius: 10px;
     height: 27rem;
     width: 58rem;
-    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
+}
+
+#itally-Mark {
+    font-style: italic;
+    font-size: small;
 }
 
 .fund_video-container {
@@ -143,4 +140,14 @@
 }
 
 /* An Even Smaller Phone */
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 380px) {
+    .fund_video-container>p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    #fund-video {
+        width: 120%;
+        height: 18rem;
+    }
+}

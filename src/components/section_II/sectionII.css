@@ -12,15 +12,16 @@
     margin-bottom: 2rem;
 }
 
-.sectionII_title > h1 {
+.sectionII_title>h1 {
     text-align: center;
 }
 
 #return-button {
-    width: 5em;
+    width: 3em;
     position: fixed;
     margin-left: 88em;
 }
+
 /* .sectionII_mission-container {
 
 } */
@@ -37,7 +38,7 @@
     width: 17.2rem;
     height: 22rem;
     background-color: white;
-    color: rgb(128,104,104);
+    color: rgb(128, 104, 104);
     margin: 0 auto;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -54,13 +55,13 @@
     transform: scale(1.1)
 }
 
-.photo_mission-container > img {
+.photo_mission-container>img {
     height: 15rem;
     width: 15rem;
     border-radius: 10px;
 }
 
-.photo_mission-container > p {
+.photo_mission-container>p {
     font-size: large;
 }
 
@@ -71,13 +72,13 @@
     color: white;
 }
 
-.sub-section_testimony > p {
+.sub-section_testimony>p {
     color: rgb(232, 227, 227);
     font-size: larger;
     /* text-shadow: 0 0 2px lightgray; */
 }
 
-.sub-section_testimony-know  {
+.sub-section_testimony-know {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
@@ -92,8 +93,8 @@
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
-    background-position:top ;
-    
+    background-position: top;
+
 }
 
 .know-pic-container {
@@ -106,7 +107,7 @@
     height: 25rem;
     width: 35rem;
     transition: transform .5s ease;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 #know-word-pic:hover {
@@ -123,7 +124,7 @@
 
 } */
 
-.testimony-know > p {
+.testimony-know>p {
     font-size: 20px;
     font-weight: 600;
     text-shadow: 0 0 5px lightgray;
@@ -133,10 +134,10 @@
 
 
 
-ol > li {
+ol>li {
     font-size: 16px;
     font-weight: 600;
-    color: rgb(128,104,104);
+    color: rgb(128, 104, 104);
     text-shadow: 0 0 5px whitesmoke;
     margin-bottom: 15px;
     color: rgba(0, 0, 0, 0.639);
@@ -144,6 +145,7 @@ ol > li {
     font-size: 20px; */
 
 }
+
 /* Live Part */
 .sub-section_testimony-live {
     display: flex;
@@ -160,11 +162,11 @@ ol > li {
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: right;
 }
 
 
-.testimony-live > p {
+.testimony-live>p {
     font-size: 20px;
     font-weight: 600;
     text-shadow: 0 0 5px lightgray;
@@ -175,12 +177,14 @@ ol > li {
     overflow: hidden;
     border-radius: 10px;
 }
+
 #live-fam-pic {
     height: 25rem;
     width: 20rem;
     transition: transform .5s ease;
     border-radius: 10px;
 }
+
 #live-fam-pic:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
     transform: scale(1.2);
@@ -202,7 +206,7 @@ ol > li {
     width: 75rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
-    background-position:left ;
+    background-position: left;
 }
 
 .love-pic-container {
@@ -214,14 +218,14 @@ ol > li {
 #love-yal-pic {
     height: 25rem;
     transition: transform .5s ease;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .testimony-love {
     padding: 3rem;
 }
 
-.testimony-love > p {
+.testimony-love>p {
     margin-top: -20px;
     font-size: 20px;
     font-weight: 600;
@@ -247,30 +251,27 @@ ol > li {
     border-bottom: 1px solid black;
 }
 
-.quote-container > p {
+.quote-container>p {
     font-size: 20px;
 }
 
-.goback{
+.goback {
     border-radius: 120px;
-    color:white;
+    color: white;
     border: solid;
     border-color: black;
     width: 80px;
     height: 40pxs;
-   background-color: black;
-   padding-left: 8.5px;
-   padding-bottom: 2px;
+    background-color: black;
+    padding-left: 8.5px;
+    padding-bottom: 2px;
 }
 
 /* Ipad Pro */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {}
 
-}
 /* Ipad Mini */
-@media screen and (max-width: 768px) {
-
-}
+@media screen and (max-width: 768px) {}
 
 /* Phone */
 @media screen and (max-width: 550px) {
@@ -290,7 +291,7 @@ ol > li {
         height: 100%;
     }
 
-    .photo_mission-container > img {
+    .photo_mission-container>img {
         height: 100%;
         width: 100%;
     }
@@ -311,26 +312,26 @@ ol > li {
         height: 15rem;
         width: 100%;
     }
-    
+
     #know-word-pic:hover {
         transform: scale(1.1);
     }
 
-        /* Live Part */
+    /* Live Part */
 
     .sub-section_testimony-live {
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-position:top;
+        background-position: top;
     }
-    
+
     .live-pic-container {
         width: 80%;
         height: 80%;
         margin-left: 2rem;
     }
-    
+
     #live-fam-pic {
         height: 100%;
         width: 100%;
@@ -376,7 +377,7 @@ ol > li {
         height: 25rem;
     }
 
-    .photo_mission-container > img {
+    .photo_mission-container>img {
         height: 100%;
         width: 100%;
     }
@@ -397,26 +398,26 @@ ol > li {
         height: 15rem;
         width: 100%;
     }
-    
+
     #know-word-pic:hover {
         transform: scale(1.1);
     }
 
-        /* Live Part */
+    /* Live Part */
 
     .sub-section_testimony-live {
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-position:top;
+        background-position: top;
     }
-    
+
     .live-pic-container {
         width: 80%;
         height: 80%;
         margin-left: 2rem;
     }
-    
+
     #live-fam-pic {
         height: 100%;
         width: 100%;
@@ -463,7 +464,7 @@ ol > li {
         height: 100%;
     }
 
-    .photo_mission-container > img {
+    .photo_mission-container>img {
         height: 10rem;
         width: 6.8rem;
     }
@@ -484,40 +485,41 @@ ol > li {
         height: 15rem;
         width: 100%;
     }
-    
+
     #know-word-pic:hover {
         transform: scale(1.1);
     }
-    
+
     .testimony-know {
         width: 100%;
         padding: 1rem;
-}
+    }
 
-    .testimony-know > p {
+    .testimony-know>p {
         font-size: 18px;
-}
-        /* Live Part */
+    }
+
+    /* Live Part */
 
     .sub-section_testimony-live {
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-position:top;
+        background-position: top;
     }
-    
+
     .live-pic-container {
         width: 80%;
         height: 80%;
         margin-left: 1.2rem;
     }
-    
+
     #live-fam-pic {
         height: 100%;
         width: 100%;
     }
 
-    .testimony-live > p {
+    .testimony-live>p {
         font-size: 18px;
     }
 
@@ -544,9 +546,9 @@ ol > li {
 
     .testimony-love {
         padding: 1rem;
-    }    
+    }
 
-    .testimony-love > p {
+    .testimony-love>p {
         font-size: 18px;
 
     }
