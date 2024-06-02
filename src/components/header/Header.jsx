@@ -12,7 +12,9 @@ const Header = () => {
             <div className='header_sub-container' >
                 <div className='header_container-elements'>
                     <div className="fcc-img">
-                        <img id='fcc_image' src={fccLogo} alt='Fordham-Community-Church-Logo' />
+                        <a href='https://www.fccbronx.org/' target='_blank'>
+                            <img id='fcc_image' src={fccLogo} alt='Fordham-Community-Church-Logo' />
+                        </a>
                     </div>
                     <div className='top-header'>
                         <h1 className='title'>Fordham Community Church</h1>

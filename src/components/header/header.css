@@ -73,13 +73,10 @@
         width: 100%;
     }
 
-    .fcc-img {
-        
-    }
 
     #fcc_image {
-        width: 75px;
-        height: 70px;
+        width: 85px;
+        height: 80px;
     }
 
     .top-header {
@@ -132,8 +129,8 @@
     }
 
     #fcc_image {
-        width: 75px;
-        height: 70px;
+        width: 85px;
+        height: 80px;
     }
 
     .top-header {
@@ -144,7 +141,7 @@
         flex-direction: column;
         height: 25em;
         align-items: center;
-        
+        width: 100%;
     }
 
     #headerImage {

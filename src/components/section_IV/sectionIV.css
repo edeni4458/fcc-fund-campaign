@@ -116,6 +116,15 @@
     .heading-container > h1 {
         font-size:2rem;
     }
+
+    .image-and-p-main-container {
+        flex-direction: column;
+        margin-top: 30em
+    }
+
+    .p-container {
+        text-align: center;
+    }
 }
 
 /* An Even Smaller Phone */
@@ -123,7 +132,7 @@
     .sectionIV_main-container {
         margin-bottom: 20rem;
         height: 75rem;
-        padding: 0.2rem;
+        padding: 1rem;
     }
 
     .heading-container {
@@ -132,6 +141,11 @@
 
     .heading-container > h1 {
         font-size:2rem;
+    }
+
+    .image-and-p-main-container {
+        flex-direction: column;
+        margin-top: 30em
     }
 
 }

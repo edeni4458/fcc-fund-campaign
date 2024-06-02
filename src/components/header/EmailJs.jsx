@@ -54,7 +54,6 @@ const EmailJs = () => {
     return (
         <div className="dialog-con">
             <dialog id="dialog" ref={popRef}>
-
                 <section className='emailJs_main-container'>
                     <form className='form-container' onSubmit={sendEmail} action="" method="post">
                         <div className='label_main-container'>
@@ -74,7 +73,7 @@ const EmailJs = () => {
                         {/* <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} /> */}
                         <div className='pledge-buttons'>
                             <div className='submit-pledge-button-container'>
-                                <button onClick={handleClick} className='submit-pledge'>Submit Pledge</button>
+                                <button onClick={handleClick} className='submit-pledge'>Pledge</button>
                             </div>
                             <button onClick={closeModal} className='cancel-pledge'>Cancel</button>
                         </div>
@@ -82,8 +81,7 @@ const EmailJs = () => {
                 </section>
             </dialog>
             <div className='header_container-button'>
-                <button onClick={openModal} className='submit-btn'>Make a Pledge</button>
-
+                <button onClick={openModal} className='make-a-pledge-btn'>Pledge</button>
                 {pledge ? <p>Thank you for your Pledge</p> : null}
             </div>
         </div>

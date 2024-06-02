@@ -19,11 +19,8 @@ const SectionIII = () => {
                     <p>We need 1,000 people or churches to give $5,000 each.</p>
                 </div>
                 <div className='fund_buttons-container'>
-
                     <button className='submit-btn'>Donate Now</button>
                     <EmailJs />
-
-
                 </div>
             </section>
         </div>
