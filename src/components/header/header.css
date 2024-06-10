@@ -87,7 +87,7 @@
         flex-direction: column;
         height: 25em;
         align-items: center;
-        
+        width: 100%;
     }
 
     #headerImage {
@@ -124,10 +124,6 @@
         width: 100%;
     }
 
-    .fcc-img {
-        
-    }
-
     #fcc_image {
         width: 85px;
         height: 80px;
@@ -137,10 +133,19 @@
         flex: 0;
     }
 
+    .header_sub-container {
+        width: 100%;
+    }
+
     .header_container-elements {
         flex-direction: column;
         height: 25em;
         align-items: center;
+        width: 100%;
+    }
+
+    .header-Image {
+        margin: 0 auto;
         width: 100%;
     }
 
@@ -149,15 +154,15 @@
         height: 100%;
     }
 
-    .header_container-elements>img {
+    .header_container-elements > img {
         width: 8rem;
     }
 
-    .header_container-elements>h2 {
+    .header_container-elements > h2 {
         font-size: 18px;
     }
 
-    .header_container-button>h4 {
+    .header_container-button > h4 {
         font-size: 18px;
     }
     .buildtext  {
