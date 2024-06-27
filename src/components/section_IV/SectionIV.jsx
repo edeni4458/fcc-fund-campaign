@@ -5,14 +5,13 @@ import love from "../z_images/Love.jpg"
 import live from "../z_images/Live.jpg"
 import OurStory from './OurStory'
 import { Link } from 'react-router-dom'
-import Carousel from './Carousel'
 
 const SectionIV = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 10;
+            const isScrolled = window.scrollY > 500;
             setScrolled(isScrolled);
         };
 

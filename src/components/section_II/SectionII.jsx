@@ -4,13 +4,11 @@ import hisWord from '../z_images/knowing_HIS_word.jpg'
 import liveFam from '../z_images/our-values-bg.jpg'
 import loveYal from '../z_images/love_our_barrio.jpg'
 import { Link } from 'react-router-dom'
-import returnHome from '../z_images/return-home-btn.png'
 
 const SectionII = () => {
     return (
         <div>
             <section className='sectionII_main-container'>
-                <Link reloadDocument to={"/"}><img id='return-button' src={returnHome}  alt='return-button'/></Link>
                 <div className='sectionII_title'>
                 </div>
                 <div className='sectionII_mission-container'>

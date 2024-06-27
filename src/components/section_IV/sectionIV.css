@@ -23,12 +23,12 @@
     align-items: center;
     height: 25em;
     gap: 3em;
-    transition: opacity 1.5s ease;
     opacity: 0;
 }
 
 .fade-in {
     opacity: 1;
+    transition: 1.5s ease;
 }
 
 .image-and-p-container {
