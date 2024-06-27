@@ -33,7 +33,7 @@
 #headerImage {
     width: 90%;
     height: 90%;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .title {
@@ -67,6 +67,8 @@
         width: 100%;
         height: auto;
         margin-top: -45px;
+        padding: 15px;
+        
     }
 
     .header_sub-container {
@@ -118,6 +120,7 @@
         width: 100%;
         height: auto;
         margin-top: -45px;
+        padding: 15px;
     }
 
     .header_sub-container {
