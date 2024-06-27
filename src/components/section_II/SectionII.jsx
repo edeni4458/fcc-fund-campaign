@@ -1,7 +1,7 @@
 import React from 'react'
 import '../section_II/sectionII.css'
 import hisWord from '../z_images/knowing_HIS_word.jpg'
-import liveFam from '../z_images/live_like_family.jpeg'
+import liveFam from '../z_images/our-values-bg.jpg'
 import loveYal from '../z_images/love_our_barrio.jpg'
 import { Link } from 'react-router-dom'
 import returnHome from '../z_images/return-home-btn.png'
@@ -95,7 +95,7 @@ const SectionII = () => {
                         <p>“That big old building sitting there is how you project the gospel forward in your city.” <br />- Mark Dever</p>
                         <p>"Generally speaking, city churches can’t purchase historic properties on their own. They will need kingdom-minded benefactors who embrace this vision of the gospel in the city and the church’s role in promoting the common good. Who will help churches buy or remain in their kingdom outposts?" <br />- Duke Kwon</p>
                     </div>
-                    <Link to={"/"}><div className='goback'>Go Back</div></Link>
+                    <Link reloadDocument to={"/"}><div className='goback'>Go Back</div></Link>
                 </div>
             </section>
         </div>
