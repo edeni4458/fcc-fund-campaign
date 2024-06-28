@@ -19,7 +19,8 @@ const SectionIII = () => {
                     <p>We need 1,000 people or churches to give $5,000 each.</p>
                 </div>
                 <div className='fund_buttons-container'>
-                    <button className='submit-btn'>Donate Now</button>
+               
+                    <button className='submit-btn'> <a href="https://give.tithe.ly/?formId=628eb570-6865-11ee-90fc-1260ab546d11">Donate Now</a></button>
                     <EmailJs />
                 </div>
             </section>
