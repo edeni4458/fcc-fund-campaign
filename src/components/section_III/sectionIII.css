@@ -14,9 +14,17 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* padding: 1rem; */
     background-color: white;
     align-items: center;
+    opacity: 0;
+    transition:  1s ease-out;
+    transform: scale(.9);
+}
+
+.animate {
+    opacity: 1;
+    transform: scale(1.0);
+    transition: 1s ease-out;
 }
 
 .sectionIII-container>h1 {
@@ -88,7 +96,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    
+    /* opacity: 0; */
+    transition:  1s ease-out;
+    /* transform: scale(.9); */
 }
 
 .fund_video-container>h1 {
