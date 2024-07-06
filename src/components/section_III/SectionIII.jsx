@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useRef, useCallback } from 'react'
 import { useInView } from 'react-intersection-observer'
 import '../section_III/sectionIII.css'
 import EmailJs from '../header/EmailJs'
 
 const SectionIII = () => {
-    const {ref, inView } =  useInView({
-        threshold: 0.9,
-})
+    const ref = useRef();
+
+    const { ref: inViewRef, inView } = useInView({
+        triggerOnce: true,
+        trackVisibility: true,
+        delay: 100,
+    });
+
+
+    const setRefs = useCallback(
+        (node) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef]
+    )
+
+
+
+
+    //     const {ref, inView } =  useInView({
+    //         threshold: 0.9,
+    //         triggerOnce: true,
+    // })
 
     return (
         <div className='sectionIII_main-container'>
@@ -16,15 +37,14 @@ const SectionIII = () => {
                 <iframe id='fund-video' src="https://www.youtube.com/embed/bL3mashs3Do?si=sNEdT8Ny-dppLaoj" title="FCC Building Vision Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <p>“That big old building sitting there is how you project the gospel forward in your city.”<br /><span id='itally-Mark'>Mark Dever, Pastor, Capitol Hill Baptist Church</span></p>
             </div>
-            <section ref={ref} className={`sectionIII-container ${inView ? 'animate' : ''}`}>
-                {/* <hr className='divider'></hr> */}
+            <section ref={setRefs} className={`sectionIII-container ${inView ? 'animate' : ''}`}>
                 <h1>Fundraising Goal</h1>
                 <div className='fund-container'>
                     <p id='goal-tag'>$5 million</p>
                     <p>We need 1,000 people or churches to give $5,000 each.</p>
                 </div>
                 <div className='fund_buttons-container'>
-                    <button className='submit-btn'> <a href="https://give.tithe.ly/?formId=628eb570-6865-11ee-90fc-1260ab546d11">Donate Now</a></button>
+                    <button className='submit-btn'><a href="https://give.tithe.ly/?formId=628eb570-6865-11ee-90fc-1260ab546d11">Donate Now</a></button>
                     <EmailJs />
                 </div>
             </section>

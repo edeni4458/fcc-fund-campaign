@@ -17,16 +17,16 @@
     background-color: white;
     align-items: center;
     opacity: 0;
-    transform: translateY(100px);
-    transition:  1s ease-out;
+    transform: translateX(-100px);
+    transition:  0.9s ease-out;
 }
 
 .animate {
     opacity: 1;
-    transition: 1s ease-out;
-    transform: translateY(0px);
-
+    transition: 0.9s ease-out;
+    transform: translateX(0px);
 }
+
 
 .sectionIII-container>h1 {
     text-align: center;
@@ -97,11 +97,16 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    /* opacity: 0; */
-    transition:  1s ease-out;
-    /* transform: scale(.9); */
+    /* opacity: 0;
+    transform: translateY(100px);
+    transition:  0.9s ease-out; */
 }
 
+.animate-2 {
+    opacity: 1;
+    transition: 0.9s ease-out;
+    transform: translateX(0px);
+}
 .fund_video-container>h1 {
     font-weight: 700;
     text-align: center;
