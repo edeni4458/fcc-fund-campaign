@@ -17,14 +17,15 @@
     background-color: white;
     align-items: center;
     opacity: 0;
+    transform: translateY(100px);
     transition:  1s ease-out;
-    transform: scale(.9);
 }
 
 .animate {
     opacity: 1;
-    transform: scale(1.0);
     transition: 1s ease-out;
+    transform: translateY(0px);
+
 }
 
 .sectionIII-container>h1 {
