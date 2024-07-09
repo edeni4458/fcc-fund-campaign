@@ -46,6 +46,7 @@ dialog[open]::backdrop {background-color: rgba(0, 0, 0, 0.465);
 
 
 
+
 label {
     padding: 2px;
     font-size: larger;
@@ -74,6 +75,7 @@ label {
 
 .make-a-pledge-btn:hover {
     background-color: rgba(0, 0, 0, 0.82);
+  
 }
 
 /* .submit-pledge-button-container{
@@ -91,6 +93,7 @@ label {
     border-radius: 8px;
     font-weight: 600;
     transition: all 0.3s;
+   
 }
 
 .submit-btn:hover {
@@ -116,6 +119,16 @@ label {
     margin-bottom: 1rem;
     border-radius: 5px;
     /* border: none; */
+}
+
+/* .thanks{
+    margin-top: 10px;
+} */
+
+.thanks-p{
+    padding: 0;
+    margin: 0;
+   
 }
 
 
