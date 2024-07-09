@@ -37,8 +37,15 @@ const EmailJs = () => {
 
 
     const handleClick = () => {
-        setPledge(true)
-        closeModal()
+        if (name && email && message){
+            setPledge(true)
+            closeModal()
+
+        }
+        else{
+        console.log("missing params")
+        }
+       
     }
 
     function openModal() {
