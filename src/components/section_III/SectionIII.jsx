@@ -7,9 +7,10 @@ const SectionIII = () => {
     const ref = useRef();
 
     const { ref: inViewRef, inView } = useInView({
+        threshold: 0.7,
         triggerOnce: true,
         trackVisibility: true,
-        delay: 100,
+        delay: 100
     });
 
 

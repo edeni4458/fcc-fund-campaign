@@ -1,28 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import './sectionIV.css'
-import know from "../z_images/Know.jpg"
-import love from "../z_images/Love.jpg"
-import live from "../z_images/Live.jpg"
-import OurStory from './OurStory'
-import { Link } from 'react-router-dom'
+import React, { useRef, useCallback } from 'react';
+import { useInView } from 'react-intersection-observer'
+import './sectionIV.css';
+import know from "../z_images/Know.jpg";
+import love from "../z_images/Love.jpg";
+import live from "../z_images/Live.jpg";
+import OurStory from './OurStory';
+import { Link } from 'react-router-dom';
 
 const SectionIV = () => {
-    const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const isScrolled = window.scrollY > 500;
-            setScrolled(isScrolled);
-        };
+    const ref = useRef();
+    
+    const { ref: inViewRef, inView } = useInView({
+        threshold: 0.7,
+        triggerOnce: true,
+        trackVisibility: true,
+        delay: 100
+    });
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    },);
-
-
+    const setRefValues = useCallback(
+        (node) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef]
+    )
 
 
     return (
@@ -31,7 +33,7 @@ const SectionIV = () => {
                 <h1>Our Values</h1>
             </div>
             {/* <Carousel/> */}
-            <div className={`image-and-p-main-container ${scrolled ? 'fade-in' : ''}`}>
+            <div ref={setRefValues} className={`image-and-p-main-container ${inView ? 'fade-in' : ''}`}>
                 <Link to={"/detailspage"} reloadDocument >
                     <div className='image-and-p-container'>
                         <div className='image-container'  >
