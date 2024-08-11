@@ -41,12 +41,12 @@ const EmailJs = () => {
         closeModal()
     }
 
-    function openModal() {
 
+    function openModal() {
         popRef.current.showModal()
     }
-    function closeModal() {
 
+    function closeModal() {
         popRef.current.close()
     }
 
@@ -62,11 +62,11 @@ const EmailJs = () => {
                             </div>
                             <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                             <div className='label-container'>
-                                <label name='name' >first name</label>
+                                <label name='name' >full name</label>
                             </div>
                             <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                             <div className='label-container'>
-                                <label name='note'>last name</label>
+                                <label name='note'>message</label>
                             </div>
                             <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                         </div>
