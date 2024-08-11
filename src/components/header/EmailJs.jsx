@@ -37,15 +37,15 @@ const EmailJs = () => {
 
 
     const handleClick = () => {
-        if (name && email && message){
+        if (name && email && message) {
             setPledge(true)
             closeModal()
 
         }
-        else{
-        console.log("missing params")
+        else {
+            console.log("missing params")
         }
-       
+
     }
 
     function openModal() {
@@ -69,11 +69,11 @@ const EmailJs = () => {
                             </div>
                             <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                             <div className='label-container'>
-                                <label name='name' >first name</label>
+                                <label name='name' >full name</label>
                             </div>
                             <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                             <div className='label-container'>
-                                <label name='note'>last name</label>
+                                <label name='note'>message</label>
                             </div>
                             <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
                         </div>
@@ -88,15 +88,15 @@ const EmailJs = () => {
                 </section>
             </dialog>
             <div className='header_container-button'>
-              
-                {pledge?  <p className='thanks-p'>Thanks for your Pledge</p> :<button onClick={openModal} className='make-a-pledge-btn'>Pledge</button>}
-                
+
+                {pledge ? <p className='thanks-p'>Thanks for your Pledge</p> : <button onClick={openModal} className='make-a-pledge-btn'>Pledge</button>}
+
             </div>
-           
+
             {/* <div> {pledge ? : null}</div> */}
-          
+
         </div>
-         
+
     )
 }
 
