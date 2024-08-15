@@ -11,6 +11,8 @@ const EmailJs = () => {
     const [message, setMessage] = useState('')
     const [pledge, setPledge] = useState(false)
 
+    let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -22,7 +24,8 @@ const EmailJs = () => {
             email: email,
             message: message,
         }
-        emailjs.send(serviceId, templateId, templateParams, publicKey)
+     
+            emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((res) => {
                 console.log('Email sent sucessfully.', res)
                 setName('');
@@ -32,18 +35,24 @@ const EmailJs = () => {
             .catch((error) => {
                 console.error('Error sending email:', error)
             })
+
+        
+        
+       
     }
 
 
 
     const handleClick = () => {
-        if (name && email && message) {
+        if (name && email && message && regx.test(email)) {
+            // sendEmail()
             setPledge(true)
             closeModal()
 
         }
         else {
             console.log("missing params")
+            alert("enter valid email")
         }
 
     }
