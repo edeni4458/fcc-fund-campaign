@@ -5,7 +5,7 @@
 }
 
 .sectionII_title {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
     margin-bottom: 2rem;
@@ -253,15 +253,19 @@ ol>li {
 }
 
 .goback {
-    border-radius: 120px;
+    border-radius: 5px;
     color: white;
-    border: solid;
-    border-color: black;
-    width: 80px;
-    height: 40pxs;
+    border:none;
+    width: 8%;
+    height: 40px;
     background-color: black;
-    padding-left: 8.5px;
-    padding-bottom: 2px;
+}
+
+.goback:hover {
+    transition: ease-in-out .5s;
+    background-color: darkgray;
+    color: #2F4F4F;
+    font-weight: bold;
 }
 
 /* Ipad Pro */
@@ -277,7 +281,10 @@ ol>li {
     }
 
     .sectionII_title {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
     }
 
     .main_photo_mission-container {
@@ -367,6 +374,13 @@ ol>li {
 
     .quote-container {
         width: 100%;
+    }
+    
+.goback {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        justify-self: flex-end;
     }
 }
 

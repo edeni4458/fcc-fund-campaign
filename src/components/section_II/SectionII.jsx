@@ -10,6 +10,7 @@ const SectionII = () => {
         <div>
             <section className='sectionII_main-container'>
                 <div className='sectionII_title'>
+                    <Link reloadDocument to={"/"}><button className='goback'>Main Page</button></Link>
                 </div>
                 <div className='sectionII_mission-container'>
                     <div className='sub-section_testimony'>
@@ -93,7 +94,9 @@ const SectionII = () => {
                         <p>“That big old building sitting there is how you project the gospel forward in your city.” <br />- Mark Dever</p>
                         <p>"Generally speaking, city churches can’t purchase historic properties on their own. They will need kingdom-minded benefactors who embrace this vision of the gospel in the city and the church’s role in promoting the common good. Who will help churches buy or remain in their kingdom outposts?" <br />- Duke Kwon</p>
                     </div>
-                    <Link reloadDocument to={"/"}><div className='goback'>Go Back</div></Link>
+                    <div>
+                        <Link reloadDocument to={"/"}><button className='goback'>Main Page</button></Link>
+                    </div>
                 </div>
             </section>
         </div>

@@ -43,6 +43,7 @@ const SectionIV = () => {
                             <h2>Know</h2>
                             <p>Knowing God's word<br /> and the Gospel.</p>
                         </div>
+                        <p className='more-link'>more</p>
                     </div>
                 </Link>
                 <Link to={"/detailspage"} reloadDocument >
@@ -54,6 +55,7 @@ const SectionIV = () => {
                             <h2>Live</h2>
                             <p>Living like family,<br /> following Jesus together.</p>
                         </div>
+                        <p className='more-link'>more</p>
                     </div>
                 </Link >
                 <Link to={"/detailspage"} reloadDocument >
@@ -65,6 +67,7 @@ const SectionIV = () => {
                             <h2>Love</h2>
                             <p>Loving our neighbors<br /> in word and deed.</p>
                         </div>
+                        <p className='more-link'>more</p>
                     </div>
                 </Link>
             </div>

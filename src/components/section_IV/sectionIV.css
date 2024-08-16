@@ -73,6 +73,11 @@
     font-weight: 500;
 }
 
+.more-link {
+    text-align: end;
+    font-weight: 600;
+}
+
 .p-container > h2 {
     
     font-weight: 600;

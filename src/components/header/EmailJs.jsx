@@ -10,26 +10,26 @@ const EmailJs = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [pledge, setPledge] = useState(false)
-    const [emailHistory,setEmailHistory] = useState({})
+    // const [emailHistory, setEmailHistory] = useState({})
 
     let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch("http://localhost:8000/history")
-        .then(res=> res.json)
-        .then(data=>{
-            if(!data.error){
-                console.log(data)
+            .then(res => res.json)
+            .then(data => {
+                if (!data.error) {
+                    console.log(data)
 
-            }
+                }
 
-            else{
-                console.log(data.error)
-            }
-        })
-      
-     
-    },[])
+                else {
+                    console.log(data.error)
+                }
+            })
+
+
+    }, [])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -42,8 +42,8 @@ const EmailJs = () => {
             email: email,
             message: message,
         }
-     
-            emailjs.send(serviceId, templateId, templateParams, publicKey)
+
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((res) => {
                 console.log('Email sent sucessfully.', res)
                 setName('');
@@ -54,9 +54,9 @@ const EmailJs = () => {
                 console.error('Error sending email:', error)
             })
 
-        
-        
-       
+
+
+
     }
 
 
