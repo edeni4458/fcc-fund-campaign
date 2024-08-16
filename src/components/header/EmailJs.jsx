@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import '../header/emailJs.css'
 import "../section_III/sectionIII.css"
@@ -10,8 +10,26 @@ const EmailJs = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [pledge, setPledge] = useState(false)
+    const [emailHistory,setEmailHistory] = useState({})
 
     let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
+
+    useEffect(()=>{
+        fetch("http://localhost:8000/history")
+        .then(res=> res.json)
+        .then(data=>{
+            if(!data.error){
+                console.log(data)
+
+            }
+
+            else{
+                console.log(data.error)
+            }
+        })
+      
+     
+    },[])
 
     const sendEmail = (e) => {
         e.preventDefault();
