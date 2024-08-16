@@ -127,10 +127,14 @@
 
     .image-and-p-main-container {
         flex-direction: column;
-        margin-top: 30em
+        margin-top: 35em
     }
 
     .p-container {
+        text-align: center;
+    }
+
+    .more-link {
         text-align: center;
     }
 }
@@ -153,7 +157,7 @@
 
     .image-and-p-main-container {
         flex-direction: column;
-        margin-top: 30em
+        margin-top: 45em
     }
 
 }
