@@ -9,7 +9,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .heading-container > h1 {
@@ -42,13 +42,16 @@
     justify-content: center;
     gap: 15px;
     transition: opacity 1.5s ease;
+    background-color: rgba(234, 232, 232, 0.597);
+    border-radius: 20px;
+    /* -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)); */
 }
 
 
 .image-and-p-container:hover {
     transform: scale(1.02);
     border: 1px solid skyblue;
-    border-radius: 6px;
+    border-radius: 20px;
     transition: opacity 1.5s ease;
 }
 
