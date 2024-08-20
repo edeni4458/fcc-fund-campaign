@@ -36,7 +36,7 @@ const SectionIII = () => {
                 <h1>Why a building?</h1>
                 <p>We want to own a building in the Bronx in order to help reshape the spiritual climate through planting<br /> gospel centered churches.</p>
                 <iframe id='fund-video' src="https://www.youtube-nocookie.com/embed/bL3mashs3Do?si=-VXqq4FXzg7huSme" title="FCC Building Vision Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                <p>“That big old building sitting there is how you project the gospel forward in your city.”<br /><span id='itally-Mark'>Mark Dever, Pastor, Capitol Hill Baptist Church</span></p>
+                <p>“That big old building sitting there is `how you project the gospel forward in your city.”<br /><span id='itally-Mark'>Mark Dever, Pastor, Capitol Hill Baptist Church</span></p>
             </div>
             <section ref={setRefs} className={`sectionIII-container ${inView ? 'animate' : ''}`}>
                 <h1>Fundraising Goal</h1>

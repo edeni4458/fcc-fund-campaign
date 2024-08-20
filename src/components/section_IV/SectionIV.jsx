@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const SectionIV = () => {
 
     const ref = useRef();
-    
+
     const { ref: inViewRef, inView } = useInView({
         threshold: 0,
         triggerOnce: true,
@@ -34,42 +34,48 @@ const SectionIV = () => {
             </div>
             {/* <Carousel/> */}
             <div ref={setRefValues} className={`image-and-p-main-container ${inView ? 'fade-in' : ''}`}>
-                <Link to={"/detailspage"} reloadDocument >
-                    <div className='image-and-p-container'>
-                        <div className='image-container'  >
-                            <img className='img-edit' src={know} alt='' />
-                        </div>
-                        <div className='p-container'>
-                            <h2>Know</h2>
-                            <p>Knowing God's word<br /> and the Gospel.</p>
-                        </div>
-                        <p className='more-link'>more</p>
+
+                <div className='image-and-p-container'>
+                    <div className='image-container'  >
+                        <img className='img-edit' src={know} alt='' />
                     </div>
-                </Link>
-                <Link to={"/detailspage"} reloadDocument >
-                    <div className='image-and-p-container'>
-                        <div className='image-container' >
-                            <img className='img-edit' src={live} alt='' />
-                        </div>
-                        <div className='p-container'>
-                            <h2>Live</h2>
-                            <p>Living like family,<br /> following Jesus together.</p>
-                        </div>
-                        <p className='more-link'>more</p>
+                    <div className='p-container'>
+                        <h2>Know</h2>
+                        <p>Knowing God's word<br /> and the Gospel.</p>
                     </div>
-                </Link >
-                <Link to={"/detailspage"} reloadDocument >
-                    <div className='image-and-p-container'>
-                        <div className='image-container'>
-                            <img className='img-edit' src={love} alt='' />
-                        </div>
-                        <div className='p-container'>
-                            <h2>Love</h2>
-                            <p>Loving our neighbors<br /> in word and deed.</p>
-                        </div>
-                        <p className='more-link'>more</p>
+                    <Link className='more-link' to={"/detailspage"} reloadDocument >
+                        <p >more</p>
+                    </Link>
+                </div>
+
+
+                <div className='image-and-p-container'>
+                    <div className='image-container' >
+                        <img className='img-edit' src={live} alt='' />
                     </div>
-                </Link>
+                    <div className='p-container'>
+                        <h2>Live</h2>
+                        <p>Living like family,<br /> following Jesus together.</p>
+                    </div>
+                    <Link className='more-link' to={"/detailspage"} reloadDocument >
+                        <p >more</p>
+                    </Link >
+                </div>
+
+
+                <div className='image-and-p-container'>
+                    <div className='image-container'>
+                        <img className='img-edit' src={love} alt='' />
+                    </div>
+                    <div className='p-container'>
+                        <h2>Love</h2>
+                        <p>Loving our neighbors<br /> in word and deed.</p>
+                    </div>
+                    <Link className='more-link' to={"/detailspage"} reloadDocument >
+                        <p>more</p>
+                    </Link>
+
+                </div>
             </div>
             <OurStory />
         </div>
