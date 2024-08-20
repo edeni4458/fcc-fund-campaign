@@ -9,6 +9,8 @@ const EmailJs = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [number, setNumber] = useState('')
+    const [amount, setAmount] = useState('')
     const [pledge, setPledge] = useState(false)
     // const [emailHistory, setEmailHistory] = useState({})
 
@@ -41,6 +43,8 @@ const EmailJs = () => {
             name: name,
             email: email,
             message: message,
+            number: number,
+            amount: amount,
         }
 
         emailjs.send(serviceId, templateId, templateParams, publicKey)
@@ -49,14 +53,12 @@ const EmailJs = () => {
                 setName('');
                 setEmail('');
                 setMessage('');
+                setNumber('');
+                setAmount('');
             })
             .catch((error) => {
                 console.error('Error sending email:', error)
             })
-
-
-
-
     }
 
 
@@ -66,7 +68,7 @@ const EmailJs = () => {
             sendEmail()
             setPledge(true)
             closeModal()
-         
+
         }
         else {
             console.log("missing params")
@@ -89,20 +91,28 @@ const EmailJs = () => {
         <div className="dialog-con">
             <dialog id="dialog" ref={popRef}>
                 <section className='emailJs_main-container'>
-                    <form className='form-container'  action="" method="post">
+                    <form className='form-container' action="" method="post">
                         <div className='label_main-container'>
                             <div className='label-container'>
-                                <label name='email'>email address</label>
+                                <label name='email'>Email Address</label>
                             </div>
                             <input required onChange={(e) => setEmail(e.target.value)} type="email" value={email} />
                             <div className='label-container'>
-                                <label name='name' >full name</label>
+                                <label name='name' >Full name</label>
                             </div>
                             <input required onChange={(e) => setName(e.target.value)} type="text" value={name} />
                             <div className='label-container'>
-                                <label name='note'>message</label>
+                                <label name='note'>Message</label>
                             </div>
-                            <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}></input>
+                            <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}/>
+                            <div className='label-container'>
+                                <label name='note'>Contact Number</label>
+                            </div>
+                            <input required onChange={(e) => setNumber(e.target.value)} type="number" value={number}/>
+                            <div className='label-container'>
+                                <label name='note'>Amount</label>
+                            </div>
+                            <input required onChange={(e) => setAmount(e.target.value)} type="number" value={amount} placeholder='$'/>
                         </div>
                         {/* <input onClick={handleClick} className='submit-btn' type='submit' value={pledge} /> */}
                         <div className='pledge-buttons'>
