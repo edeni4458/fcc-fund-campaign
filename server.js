@@ -8,13 +8,13 @@ const app = express()
 
 app.use(cors())
 
-app.use((req, res, next) => {
-    res.setHeader(
-      'Content-Security-Policy',
-      "default-src 'self'; connect-src 'self' http://localhost:8000"
-    );
-    next();
-  });
+// app.use((req, res, next) => {
+//     res.setHeader(
+//       'Content-Security-Policy',
+//       "default-src 'self'; connect-src 'self' http://localhost:8000"
+//     );
+//     next();
+//   });
 
 app.get("/history", (req,res)=>{
     fetch(` https://api.emailjs.com/api/v1.1/history?user_id=wKhF1Jo161NykecSP&accessToken=${process.env.API_KEY}&page=1&count=50`)
