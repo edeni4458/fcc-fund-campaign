@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import '../header/emailJs.css'
 import "../section_III/sectionIII.css"
@@ -14,22 +14,22 @@ const EmailJs = () => {
 
     let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
 
-    useEffect(() => {
-        fetch("http://localhost:8000/history")
-            .then(res => res.json)
-            .then(data => {
-                if (!data.error) {
-                    console.log(data)
+    // useEffect(() => {
+    //     fetch("http://localhost:8000/history")
+    //         .then(res => res.json)
+    //         .then(data => {
+    //             if (!data.error) {
+    //                 console.log(data)
 
-                }
+    //             }
 
-                else {
-                    console.log(data.error)
-                }
-            })
+    //             else {
+    //                 console.log(data.error)
+    //             }
+    //         })
 
 
-    }, [])
+    // }, [])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -63,14 +63,14 @@ const EmailJs = () => {
 
     const handleClick = () => {
         if (name && email && message && regx.test(email)) {
-            // sendEmail()
+            sendEmail()
             setPledge(true)
             closeModal()
-
+         
         }
         else {
             console.log("missing params")
-            alert("enter valid email")
+            // alert("enter valid email")
         }
 
     }
@@ -89,7 +89,7 @@ const EmailJs = () => {
         <div className="dialog-con">
             <dialog id="dialog" ref={popRef}>
                 <section className='emailJs_main-container'>
-                    <form className='form-container' onSubmit={sendEmail} action="" method="post">
+                    <form className='form-container'  action="" method="post">
                         <div className='label_main-container'>
                             <div className='label-container'>
                                 <label name='email'>email address</label>

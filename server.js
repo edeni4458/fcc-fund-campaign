@@ -6,19 +6,22 @@ require('dotenv').config()
 
 const app = express()
 
-app.use(cors())
+// app.use(cors())
+app.use(cors({origin: true, credentials: true}));
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
-// app.use((req, res, next) => {
-//     res.setHeader(
-//       'Content-Security-Policy',
-//       "default-src 'self'; connect-src 'self' http://localhost:8000"
-//     );
-//     next();
-//   });
+app.use((req, res, next) => {
+    res.setHeader(
+      'Content-Security-Policy',
+      "default-src 'self'; connect-src 'self' http://localhost:8000"
+    );
+    next();
+  });
 
 app.get("/history", (req,res)=>{
     fetch(` https://api.emailjs.com/api/v1.1/history?user_id=wKhF1Jo161NykecSP&accessToken=${process.env.API_KEY}&page=1&count=50`)
-    .then(res => res.json())
+    .then(res => res.text())
     .then(data=>{
         if(data){
             res.json(data)
