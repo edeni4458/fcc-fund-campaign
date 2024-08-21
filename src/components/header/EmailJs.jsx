@@ -14,8 +14,9 @@ const EmailJs = () => {
     const [pledge, setPledge] = useState(false)
     // const [emailHistory, setEmailHistory] = useState({})
 
-    let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
-    let numberReg = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/
+    let emailRegx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
+    let numberReg = /^(?:\+1\s?)?\(?([2-9][0-9]{2})\)?[-.\s]?([2-9][0-9]{2})[-.\s]?([0-9]{4})$/
+    console.log(typeof number)
 
 
 
@@ -49,7 +50,7 @@ const EmailJs = () => {
             number: number,
             amount: amount,
         }
-
+       if( emailRegx.test(email)  && numberReg.test(number)){
         emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((res) => {
                 console.log('Email sent sucessfully.', res)
@@ -62,12 +63,19 @@ const EmailJs = () => {
             .catch((error) => {
                 console.error('Error sending email:', error)
             })
+
+       }
+       else{
+        return <p>invalid Params</p>
+       }
+        
     }
 
 
 
     const handleClick = () => {
-        if (name && email && message && amount && number && regx.test(email) && regx.test(numberReg) ) {
+        console.log(numberReg.test(number))
+        if (name && email && message && amount && number &&  emailRegx.test(email) && numberReg.test(number) ) {
         
             setPledge(true)
             closeModal()
@@ -108,11 +116,11 @@ const EmailJs = () => {
                             </div>
                             <input required onChange={(e) => setMessage(e.target.value)} type="text" value={message}/>
                             <div className='label-container'>
-                                <label name='note'>Contact Number</label>
+                                <label name='number'>Contact Number</label>
                             </div>
                             <input required onChange={(e) => setNumber(e.target.value)} type="number" value={number}/>
                             <div className='label-container'>
-                                <label name='note'>Amount</label>
+                                <label name='amount'>Amount</label>
                             </div>
                             <input required onChange={(e) => setAmount(e.target.value)} type="number" value={amount} placeholder='$'/>
                         </div>
