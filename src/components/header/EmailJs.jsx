@@ -15,6 +15,9 @@ const EmailJs = () => {
     // const [emailHistory, setEmailHistory] = useState({})
 
     let regx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
+    let numberReg = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/
+
+
 
     // useEffect(() => {
     //     fetch("http://localhost:8000/history")
@@ -64,8 +67,8 @@ const EmailJs = () => {
 
 
     const handleClick = () => {
-        if (name && email && message && regx.test(email)) {
-            sendEmail()
+        if (name && email && message && amount && number && regx.test(email) && regx.test(numberReg) ) {
+        
             setPledge(true)
             closeModal()
 
@@ -86,12 +89,11 @@ const EmailJs = () => {
         popRef.current.close()
     }
 
-    console.log(pledge)
     return (
         <div className="dialog-con">
             <dialog id="dialog" ref={popRef}>
                 <section className='emailJs_main-container'>
-                    <form className='form-container' action="" method="post">
+                    <form className='form-container' action="" method="post" onSubmit={sendEmail}>
                         <div className='label_main-container'>
                             <div className='label-container'>
                                 <label name='email'>Email Address</label>
