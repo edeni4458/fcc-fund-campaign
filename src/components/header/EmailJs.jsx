@@ -12,6 +12,7 @@ const EmailJs = () => {
     const [number, setNumber] = useState('')
     const [amount, setAmount] = useState('')
     const [pledge, setPledge] = useState(false)
+    const [isValid,setIsValid] = useState(false)
     // const [emailHistory, setEmailHistory] = useState({})
 
     let emailRegx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+)\.([a-z]+)(\.([a-z]+))?$/;
@@ -36,6 +37,20 @@ const EmailJs = () => {
 
 
     // }, [])
+
+    function handlePhone(event){
+        const value = event.target.value;
+
+        setNumber(value);
+    
+        // Validate the phone number
+        if (numberReg.test(value)) {
+          setIsValid(true);
+        } else {
+          setIsValid(false);
+        }
+
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -118,7 +133,8 @@ const EmailJs = () => {
                             <div className='label-container'>
                                 <label name='number'>Contact Number</label>
                             </div>
-                            <input required onChange={(e) => setNumber(e.target.value)} type="number" value={number}/>
+                            <input required onChange={ handlePhone} type="number" value={number}/>
+                            {!isValid && number && ( <p style={{ color: 'red' }}>Invalid phone number format: 10 digits</p> )}
                             <div className='label-container'>
                                 <label name='amount'>Amount</label>
                             </div>
