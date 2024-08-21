@@ -52,7 +52,7 @@
     transform: scale(1.02);
     border: 1px solid skyblue;
     border-radius: 20px;
-    transition: opacity 1.5s ease;
+    transition: ease-in-out .3s;
 }
 
 .image-container {
@@ -77,9 +77,16 @@
 }
 
 .more-link {
-    text-align: end;
+    /* margin: 0 auto; */
+    /* width: 100%; */
     width: 0;
     font-weight: 600;
+}
+
+.more-link:hover {
+    color: skyblue;
+    font-weight: 600;
+    transition: ease-in-out .3s;
 }
 
 .p-container > h2 {
@@ -139,7 +146,9 @@
     }
 
     .more-link {
-        text-align: center;
+        margin: 0 auto;
+        width: 15%;
+        
     }
 }
 
