@@ -5,14 +5,16 @@ import { Route, Routes } from 'react-router';
 
 
 
+
 function App() {
 
 
   return (
     <div className="App">
+        
       <Routes>
         <Route path="/" element={<div><Header /><SectionIII /><SectionIV /> <Zfooter/></div>}></Route>
-        <Route path="/detailspage" element={<SectionII />} />
+        <Route path="/detailspage" element={ <SectionII />} />
       </Routes>
     </div>
   );
