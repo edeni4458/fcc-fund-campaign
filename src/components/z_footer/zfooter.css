@@ -1,9 +1,12 @@
 .z_footer_main-container {
+    display: grid;
+    place-items: center;
     /* background-image: url(../z_images/knowing_HIS_word.jpg); */
     background-repeat: no-repeat;
     height: 2rem;
-    width: 15rem;
+    width: 100%;
     margin-top: 3rem;
+    margin-bottom: -100px;
     /* Add the blur effect */
     /* filter: blur(8px);
     -webkit-filter: blur(1px); */
@@ -11,22 +14,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* border: solid; */
-    border-color: red;
-    margin-top: 10rem;
+    /* border-color: red; */
+    /* margin-top: 10rem; */
+        /* align-items: center;
+        justify-content: center; */
+    background-color: #2F4F4F;
+    border-radius: 10px;
 
 }
 
 .z_footer-container {
+    text-align: center; 
     width: 92%;
-    margin: 0 auto;
+   
+    /* margin: 0 auto; */
 }
 
 .z_footer-container > p {
-    text-align: left;
-    color: black;
+    /* text-align: left; */
+    color:white ;
     /* text-shadow: 0 0 10px rgb(128,104,104); */
     font-weight: 500;
     font-size: 0.9rem;
+    height: 1rem;
     
     /* padding-top: 2rem; */
 }
@@ -43,7 +53,7 @@
 @media screen and (max-width: 768px) {
     .z_footer_main-container {
        
-        margin-top: 410%;
+        margin-top: 10%;
     } 
 
 }
@@ -55,24 +65,34 @@
         margin-top: 410%;
     } 
 
-    .z_footer-container > h4 {
-        font-size: 4vh;
-        padding-top: 5rem;
-    } 
-}
+    .z_footer-container > p {
+        /* text-align: left; */
+        color:white ;
+        /* text-shadow: 0 0 10px rgb(128,104,104); */
+        font-weight: 500;
+        font-size: 0.8rem;
+        height: 0.9rem;
+        
+        /* padding-top: 2rem; */
+    }
+}    
 
 /* An Even Smaller Phone */
 @media screen and (max-width: 360px) {
     .z_footer_main-container {
+        height: 3rem;
+        margin-top: 300%;
+        font-size: 0.1rem;
        
-        margin-top: 410%;
     } 
 
 }
 @media screen and (max-width: 375px) {
     .z_footer_main-container {
        
-        margin-top: 420%;
+        margin-top: 423%;
+        font-size: 0.1rem;
+       
     } 
 
 }
