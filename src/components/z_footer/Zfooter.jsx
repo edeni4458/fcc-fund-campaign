@@ -6,7 +6,7 @@ const Zfooter = () => {
         <div className='z_footer_main-container'>
         {/* <div className='z_footer_bg-img'></div> */}
             <section className='z_footer-container'>
-                    <p>Encounter an Issue ? Email us at: FFCfundhelp@gmail.com</p>
+                    <p>Encountered An Issue ? Email Us At: FFCfundhelp@gmail.com</p>
             </section>
         </div>
     )

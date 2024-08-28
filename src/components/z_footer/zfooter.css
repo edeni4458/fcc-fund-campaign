@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     height: 2rem;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 3.4rem;
     margin-bottom: -100px;
     /* Add the blur effect */
     /* filter: blur(8px);
@@ -37,6 +37,8 @@
     font-weight: 500;
     font-size: 0.9rem;
     height: 1rem;
+    text-align: center;
+    margin-top: 5px;
     
     /* padding-top: 2rem; */
 }
@@ -91,8 +93,20 @@
     .z_footer_main-container {
        
         margin-top: 423%;
-        font-size: 0.1rem;
+       
        
     } 
+    .z_footer-container > p {
+        /* text-align: left; */
+        color:white ;
+        /* text-shadow: 0 0 10px rgb(128,104,104); */
+        font-weight: 500;
+        font-size: 0.7rem;
+   
+        text-align: center;
+        margin-top: 5px;
+        
+        /* padding-top: 2rem; */
+    }
 
 }
