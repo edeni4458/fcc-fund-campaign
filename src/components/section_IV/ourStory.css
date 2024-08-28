@@ -87,6 +87,32 @@
 
 }
 
+@media screen and (max-width: 375px) {
+    .our_story_main-container {
+        /* margin: 0 auto;
+        /* margin-top: 10rem; */
+        /* padding: 3rem; */ 
+        height: 76rem;
+        /* width: 100%;
+        margin-top: 4em; */
+    
+    }
+
+}
+@media screen and (max-width: 390px) {
+    .our_story_main-container {
+        /* margin: 0 auto;
+        /* margin-top: 10rem; */
+        /* padding: 3rem; */ 
+        height: 76rem;
+        /* width: 100%;
+        margin-top: 4em; */
+    
+    }
+
+}
+
+
 /* An Even Smaller Phone */
 @media screen and (max-width: 320px) {
 
