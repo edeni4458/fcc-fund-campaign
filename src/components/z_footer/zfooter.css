@@ -1,111 +1,93 @@
 .z_footer_main-container {
-    display: grid;
-    place-items: center;
-    /* background-image: url(../z_images/knowing_HIS_word.jpg); */
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
-    margin-top: 0.1rem;
-    margin-bottom: -100px;
-    /* Add the blur effect */
-    /* filter: blur(8px);
-    -webkit-filter: blur(1px); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border: solid; */
-    /* border-color: red; */
-    /* margin-top: 10rem; */
-        /* align-items: center;
-        justify-content: center; */
     background-color: #2F4F4F;
-    border-radius: 10px;
+    border-radius: 15px 15px 0px 0px;
+    margin: 0 auto;
 
 }
 
 .z_footer-container {
-    text-align: center; 
-    width: 92%;
-   
-    /* margin: 0 auto; */
+    text-align: center;
+    padding: 5px;
 }
 
-.z_footer-container > p {
-    /* text-align: left; */
-    color:white ;
+.z_footer-container>p {
+    color: white;
     /* text-shadow: 0 0 10px rgb(128,104,104); */
     font-weight: 500;
     font-size: 0.9rem;
     height: 1rem;
     text-align: center;
     margin-top: 5px;
-    
-    /* padding-top: 2rem; */
+
 }
 
 /* Ipad Pro */
 @media screen and (max-width: 1024px) {
     .z_footer_main-container {
-       
-        margin-top: -20rem;
-    } 
+
+        margin-top: 99rem;
+    }
 
 }
+
 /* Ipad Mini */
 @media screen and (max-width: 768px) {
     .z_footer_main-container {
-       
-        margin-top: 10%;
-    } 
+
+        margin-top: 110em;
+    }
 
 }
 
 /* Phone */
 @media screen and (max-width: 550px) {
     .z_footer_main-container {
-       
-        margin-top: 410%;
-    } 
 
-    .z_footer-container > p {
+        margin-top: 110em;
+    }
+
+    .z_footer-container>p {
         /* text-align: left; */
-        color:white ;
+        color: white;
         /* text-shadow: 0 0 10px rgb(128,104,104); */
         font-weight: 500;
         font-size: 0.8rem;
         height: 0.9rem;
-        
+
         /* padding-top: 2rem; */
     }
-}    
+}
 
 /* An Even Smaller Phone */
 @media screen and (max-width: 360px) {
     .z_footer_main-container {
-        height: 3rem;
-        margin-top: 300%;
-        font-size: 0.1rem;
-       
-    } 
+        margin-top: 99em;
+
+    }
 
 }
+
 @media screen and (max-width: 375px) {
     .z_footer_main-container {
-       
-        margin-top: 423%;
-       
-       
-    } 
-    .z_footer-container > p {
+
+
+    }
+
+    .z_footer-container>p {
         /* text-align: left; */
-        color:white ;
+        color: white;
         /* text-shadow: 0 0 10px rgb(128,104,104); */
         font-weight: 500;
         font-size: 0.7rem;
-   
+
         text-align: center;
         margin-top: 5px;
-        
+
         /* padding-top: 2rem; */
     }
 
