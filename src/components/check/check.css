@@ -14,17 +14,19 @@
 #checkdialog{
     margin: 0 auto;
     margin-top: 5em;
-    width: 50%;
+    width: 30%;
     background-color: #2a4747e2;
     animation: fade-out 0.7s ease-out;
     border-radius: 10px;
     border: none;
-    color:white
-    
+    color:white;
+    height: 20%;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
 button{
-    border: none;
+    border: 1px solid;
     border-radius: 8px;
     color:white;
     background-color: black;
@@ -34,4 +36,17 @@ button{
 
 
 
+}
+
+
+@media screen and (max-width: 550px) {
+    #checkdialog{
+        width: 70%;
+    }
+
+    button{
+        border: 1px solid;
+        border-radius: 8px;
+    }
+        
 }
