@@ -2,6 +2,7 @@ import React, { useRef, useCallback } from 'react'
 import { useInView } from 'react-intersection-observer'
 import '../section_III/sectionIII.css'
 import EmailJs from '../header/EmailJs'
+import Check from '../check/Check'
 
 const SectionIII = () => {
     const ref = useRef();
@@ -48,6 +49,7 @@ const SectionIII = () => {
                     <button className='submit-btn'><a href="https://give.tithe.ly/?formId=628eb570-6865-11ee-90fc-1260ab546d11&locationId=3d8cfb07-e380-4b62-934e-9b297cd5dbdb&fundId=b8519216-bd02-4a8a-b1fc-d3ecef61125e">Donate Now</a></button>
                     <EmailJs />
                 </div>
+                <Check/>
             </section>
         </div>
     )
