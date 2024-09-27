@@ -81,10 +81,7 @@ label {
 
 }
 
-/* .submit-pledge-button-container{
 
-
-} */
 .submit-pledge {
     width: 152px;
     height: 50px;
@@ -112,7 +109,6 @@ label {
     margin-right: 5px;
     border: none;
     border-radius: 8px;
-    /* font-size: 20px; */
     font-weight: 600;
     transition: all 0.3s;
 }
@@ -121,17 +117,12 @@ label {
 .label_main-container>input {
     margin-bottom: 1rem;
     border-radius: 5px;
-    /* border: none; */
 }
 
-/* .thanks{
-    margin-top: 10px;
-} */
 
 .thanks-p {
     padding: 0;
     margin: 0;
-
 }
 
 

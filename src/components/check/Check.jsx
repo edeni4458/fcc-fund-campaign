@@ -26,7 +26,9 @@ export default function Check() {
         </div>
       </dialog>
 
-      <p id="p1" onClick={() => openModal()}>By check?</p>
+      <button id="p1">
+        <p onClick={() => openModal()}>By check?</p>
+      </button>
     </div>
   )
 }

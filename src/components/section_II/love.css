@@ -1,0 +1,45 @@
+
+.sub-section_testimony-love {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 auto;
+    border: 0.2px solid lightgray;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 2rem;
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
+    height: 30rem;
+    width: 75rem;
+    background-image: url(../z_images/bg-img-2.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.love-pic-container {
+    width: 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#love-yal-pic {
+    height: 25rem;
+    transition: transform .5s ease;
+    border-radius: 10px;
+}
+
+.testimony-love {
+    padding: 3rem;
+}
+
+.testimony-love>p {
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 5px lightgray;
+}
+
+#love-yal-pic:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
+    transform: scale(1.2);
+}

@@ -1,15 +1,21 @@
 #p1 {
-    font-size: large;
-    color: rgba(0, 0, 0, 0.639);
-    font-weight: 500;
-
+    width: 8em;
+    height: 35px;
+    padding: 7px;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
 }
 
 #p1:hover {
-    color: skyblue;
-    font-weight: 600;
     transition: ease-in-out .3s;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.82);
+
 }
 
 #checkdialog {
