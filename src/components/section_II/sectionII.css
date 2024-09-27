@@ -166,10 +166,10 @@
         width: 100%;
     }
 
-    #know-word-pic {
+    /* #know-word-pic {
         height: 15rem;
         width: 100%;
-    }
+    } */
 
     #know-word-pic:hover {
         transform: scale(1.1);
@@ -214,9 +214,9 @@
         width: 100%;
     }
 
-    #love-yal-pic {
+    /* #love-yal-pic {
         height: 15rem;
-    }
+    } */
 
     .testimony-love {
         margin-top: 3em;

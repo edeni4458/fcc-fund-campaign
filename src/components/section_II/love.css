@@ -17,7 +17,7 @@
 }
 
 .love-pic-container {
-    width: 30rem;
+    width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -42,4 +42,17 @@
 #love-yal-pic:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 550px){
+    .sub-section_testimony-love{
+        width: 100%;
+        height: 20%;
+    }
+
+    #love-yal-pic{
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
 }
