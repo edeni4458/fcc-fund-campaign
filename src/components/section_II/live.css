@@ -51,6 +51,7 @@
     transform: scale(1.2);
 }
 
+
 /* Phone */
 @media screen and (max-width: 550px) {
     .sectionII_main-container {
@@ -385,6 +386,13 @@
 
     .testimony-love>p {
         font-size: 18px;
+
+
+@media screen and (max-width: 550px){
+    .sub-section_testimony-live{
+        width: 100%;
+        height: 20%;
+
 
     }
 }

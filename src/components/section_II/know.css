@@ -2,6 +2,7 @@
 .sub-section_testimony-know {
     display: flex;
     justify-content: space-around;
+    
     overflow: hidden;
     background-color: white;
     margin: 0 auto;
@@ -26,7 +27,7 @@
 }
 
 .know-pic-container {
-    width: 35rem;
+    width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -263,6 +264,7 @@ ol>li {
 }
 
 
+
 /* An Even, even Smaller Phone */
 @media screen and (max-width: 320px) {
     .sectionII_main-container {
@@ -382,4 +384,28 @@ ol>li {
         font-size: 18px;
 
     }
+
+@media screen and (max-width: 550px){
+    #know-word-pic{
+     
+
+          height: 100%;
+          width: 100%;
+          max-width: 100%;
+
+    }
+
+    .know-pic-container{
+        /* flex-direction: row; */
+    }
+
+    .sub-section_testimony-know{
+        display: flex;
+     
+         width: 95%;
+         height: 20%;
+
+    }
+    
+
 }
