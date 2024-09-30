@@ -13,6 +13,15 @@
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
     background-position: left;
+    opacity: 0;
+    transform: translateY(100px);
+
+}
+
+.animate {
+    opacity: 1;
+    transition: 0.9s ease-out;
+    transform: translateX(0px);
 }
 
 .love-pic-container {
@@ -25,15 +34,12 @@
     height: 25rem;
     transition: transform .5s ease;
     border-radius: 10px;
-    width: 100%;
+    width: 35rem;
 }
 
-.testimony-love {
-    padding: 3rem;
-}
 
 .testimony-love>p {
-    margin-top: -20px;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: 600;
     text-shadow: 0 0 5px lightgray;
@@ -51,7 +57,7 @@
         flex-direction: column;
         padding: 10px;
         height: 100%;
-        width: 100%;
+        width: 95%;
         background-position: top;
     }
 
@@ -61,6 +67,7 @@
 
     #love-yal-pic {
         height: 15rem;
+        width: 100%;
     }
 
     .testimony-love {
@@ -68,17 +75,6 @@
         padding: 0;
     }
 
-    .quote-container {
-        width: 100%;
-    }
-
-
-    .goback {
-        width: 100%;
-        padding: 5px;
-        text-align: center;
-        justify-self: flex-end;
-    }
 }
 
 /* An Even Smaller Phone */
@@ -89,7 +85,7 @@
         flex-direction: column;
         padding: 10px;
         height: 100%;
-        width: 100%;
+        width: 95%;
         background-position: top;
     }
 
@@ -120,7 +116,7 @@
         flex-direction: column;
         padding: 10px;
         height: 100%;
-        width: 100%;
+        width: 95%;
         background-position: top;
     }
 
@@ -151,15 +147,3 @@
     }
 }
 
-@media screen and (max-width: 550px) {
-    .sub-section_testimony-love {
-        width: 100%;
-        height: 20%;
-    }
-
-    #love-yal-pic {
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-    }
-}

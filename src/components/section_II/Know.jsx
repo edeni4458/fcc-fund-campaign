@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useRef, useCallback } from 'react'
+import { useInView } from 'react-intersection-observer'
 import hisWord from '../z_images/knowing_HIS_word.jpg'
 import './know.css'
 const Know = () => {
+
+    const ref = useRef();
+
+    const { ref: inViewRef, inView } = useInView({
+        threshold: 0,
+        triggerOnce: true,
+        trackVisibility: true,
+        delay: 100
+    });
+
+
+    const setRefs = useCallback(
+        (node) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef]
+    )
+
     return (
-        <div className='sub-section_testimony-know'>
+        <div ref={setRefs} className={`sub-section_testimony-know ${inView ? 'animate' : ''}`}>
             <div className='know-pic-container'>
                 <img id='know-word-pic' src={hisWord} alt='' />
             </div>

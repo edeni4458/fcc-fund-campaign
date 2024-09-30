@@ -24,13 +24,6 @@ const SectionIII = () => {
     )
 
 
-
-
-    //     const {ref, inView } =  useInView({
-    //         threshold: 0.9,
-    //         triggerOnce: true,
-    // })
-
     return (
         <div className='sectionIII_main-container'>
             <div className='fund_video-container'>

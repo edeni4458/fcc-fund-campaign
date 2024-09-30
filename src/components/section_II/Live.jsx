@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useRef, useCallback } from 'react'
+import { useInView } from 'react-intersection-observer'
+
 import liveFam from '../z_images/our-values-bg.jpg'
 import './live.css'
 
-const Live = () => {
+const Live = () => {    const ref = useRef();
+
+    const { ref: inViewRef, inView } = useInView({
+        threshold: 0,
+        triggerOnce: true,
+        trackVisibility: true,
+        delay: 100
+    });
+
+
+    const setRefs = useCallback(
+        (node) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef]
+    )
+
     return (
-        <div className='sub-section_testimony-live'>
+        <div ref={setRefs} className={`sub-section_testimony-live ${inView ? 'animate' : ''}`}>
             <div className='testimony-live'>
                 <p>Live: Like a Family</p>
                 <ol className='list-know'>

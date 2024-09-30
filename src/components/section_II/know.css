@@ -1,7 +1,6 @@
 .sub-section_testimony-know {
     display: flex;
     justify-content: space-around;
-
     overflow: hidden;
     background-color: white;
     margin: 0 auto;
@@ -15,6 +14,16 @@
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
     background-position: top;
+    opacity: 0;
+    transform: translateY(100px);
+
+}
+
+
+.animate {
+    opacity: 1;
+    transition: 0.9s ease-out;
+    transform: translateX(0px);
 }
 
 .know-pic-container {
@@ -70,7 +79,8 @@ ol>li {
         flex-direction: column;
         padding: 10px;
         height: 100%;
-        width: 100%
+
+        width: 95%;
     }
 
     .know-pic-container {
@@ -159,26 +169,6 @@ ol>li {
     .testimony-know {
         margin-top: 5em;
         padding: 0;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-    #know-word-pic {
-
-
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-
-    }
-
-    .sub-section_testimony-know {
-        display: flex;
-
-        width: 95%;
-        height: 20%;
-
     }
 
 }

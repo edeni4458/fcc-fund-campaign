@@ -1,11 +1,31 @@
-import React from 'react'
+import React, { useRef, useCallback } from 'react'
+import { useInView } from 'react-intersection-observer'
 import loveYal from '../z_images/love_our_barrio.jpg'
 import './love.css'
 
 
 const Love = () => {
+
+    const ref = useRef();
+
+    const { ref: inViewRef, inView } = useInView({
+        threshold: 0,
+        triggerOnce: true,
+        trackVisibility: true,
+        delay: 100
+    });
+
+
+    const setRefs = useCallback(
+        (node) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef]
+    )
+
     return (
-        <div className='sub-section_testimony-love'>
+        <div ref={setRefs} className={`sub-section_testimony-love ${inView ? 'animate' : ''}`}>
             <div className='love-pic-container'>
                 <img id='love-yal-pic' src={loveYal} alt='' />
             </div>
