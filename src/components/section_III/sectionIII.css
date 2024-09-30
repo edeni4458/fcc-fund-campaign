@@ -135,6 +135,7 @@
 @media screen and (max-width: 550px) {
     .sectionIII-container {
         width: 100%;
+        height: 28em;
     }
     
     .sectionIII-container>h1 {

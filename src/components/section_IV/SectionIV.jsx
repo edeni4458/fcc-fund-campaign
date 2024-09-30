@@ -34,7 +34,6 @@ const SectionIV = () => {
             </div>
             {/* <Carousel/> */}
             <div ref={setRefValues} className={`image-and-p-main-container ${inView ? 'fade-in' : ''}`}>
-
                 <div className='image-and-p-container'>
                     <div className='image-container'  >
                         <img className='img-edit' src={know} alt='' />
@@ -47,8 +46,6 @@ const SectionIV = () => {
                         <p >more</p>
                     </Link>
                 </div>
-
-
                 <div className='image-and-p-container'>
                     <div className='image-container' >
                         <img className='img-edit' src={live} alt='' />
@@ -61,8 +58,6 @@ const SectionIV = () => {
                         <p >more</p>
                     </Link >
                 </div>
-
-
                 <div className='image-and-p-container'>
                     <div className='image-container'>
                         <img className='img-edit' src={love} alt='' />
@@ -74,7 +69,6 @@ const SectionIV = () => {
                     <Link className='more-link' to={"/detailspage"} reloadDocument >
                         <p>more</p>
                     </Link>
-
                 </div>
             </div>
             <OurStory />

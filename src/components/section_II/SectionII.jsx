@@ -14,7 +14,7 @@ const SectionII = () => {
                 </div>
                 <div className='sectionII_mission-container'>
                     <div className='sub-section_testimony'>
-                        <h2>What God has done</h2>
+                        <h1>What God has done</h1>
                         <p> Two Services  9:45 AM (Spanish) | 11:45 AM (English)</p>
                     </div>
                     <Know />

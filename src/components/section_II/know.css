@@ -15,7 +15,14 @@
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
     background-position: top;
+    transform: translateY(100px);
+    opacity: 0;
+}
 
+.animate {
+    opacity: 1;
+    transition: 0.9s ease-out;
+    transform: translateY(0px);
 }
 
 .know-pic-container {
@@ -53,8 +60,6 @@
 }
 
 
-
-
 ol>li {
     font-size: 16px;
     font-weight: 600;
@@ -64,5 +69,317 @@ ol>li {
     color: rgba(0, 0, 0, 0.639);
     /* font-weight: 500;
     font-size: 20px; */
+}
 
+
+
+/* Phone */
+@media screen and (max-width: 550px) {
+    /* Know Part */
+
+    .sub-section_testimony-know {
+        flex-direction: column;
+        height: 100%;
+        width: 100%
+    }
+
+    .know-pic-container {
+        width: 100%;
+    }
+
+    #know-word-pic {
+        height: 15rem;
+        width: 100%;
+    }
+
+    #know-word-pic:hover {
+        transform: scale(1.1);
+    }
+
+    .testimony-know {
+        margin-top: 5em;
+        padding: 0;
+    }
+
+    /* Live Part */
+
+    .sub-section_testimony-live {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .live-pic-container {
+        width: 80%;
+        height: 80%;
+        margin-left: 2rem;
+    }
+
+    #live-fam-pic {
+        height: 100%;
+        width: 100%;
+        /* margin-left: 2rem; */
+    }
+
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+
+    .quote-container > p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .goback {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        justify-self: flex-end;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 390px) {
+    .sectionII_main-container {
+        padding: 10px;
+        /* margin-top: -5em; */
+    }
+
+    .sectionII_title {
+        text-align: center;
+
+    }
+
+    .main_photo_mission-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .photo_mission-container>img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Know Part */
+
+    .sub-section_testimony-know {
+        flex-direction: column;
+        height: 100%;
+        width: 100%
+    }
+
+    .know-pic-container {
+        width: 100%;
+    }
+
+    #know-word-pic {
+        height: 15rem;
+        width: 100%;
+    }
+
+    #know-word-pic:hover {
+        transform: scale(1.1);
+    }
+
+    .testimony-know {
+        margin-top: 5em;
+        padding: 0;
+    }
+
+    /* Live Part */
+
+    .sub-section_testimony-live {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .live-pic-container {
+        width: 80%;
+        height: 80%;
+        margin-left: 2rem;
+    }
+
+    #live-fam-pic {
+        height: 100%;
+        width: 100%;
+        /* margin-left: 2rem; */
+    }
+
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+}
+
+
+/* An Even, even Smaller Phone */
+@media screen and (max-width: 320px) {
+    .sectionII_main-container {
+        padding: 10px;
+    }
+
+    .sectionII_title {
+        text-align: center;
+    }
+
+    .main_photo_mission-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 40rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo_mission-container>img {
+        height: 10rem;
+        width: 6.8rem;
+    }
+
+    /* Know Part */
+
+    .sub-section_testimony-know {
+        flex-direction: column;
+        height: 100%;
+        width: 100%
+    }
+
+    .know-pic-container {
+        width: 100%;
+    }
+
+    #know-word-pic {
+        height: 15rem;
+        width: 100%;
+    }
+
+    #know-word-pic:hover {
+        transform: scale(1.1);
+    }
+
+    .testimony-know {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .testimony-know>p {
+        font-size: 18px;
+    }
+
+    .testimony-know {
+        margin-top: 5em;
+        padding: 0;
+    }
+
+    /* Live Part */
+
+    .sub-section_testimony-live {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .live-pic-container {
+        width: 80%;
+        height: 80%;
+        margin-left: 1.2rem;
+    }
+
+    #live-fam-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    .testimony-live>p {
+        font-size: 18px;
+    }
+
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+
+    .testimony-love {
+        padding: 1rem;
+    }
+
+    .testimony-love>p {
+        font-size: 18px;
+
+    }
 }
