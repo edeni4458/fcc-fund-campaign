@@ -26,6 +26,7 @@
     height: 25rem;
     transition: transform .5s ease;
     border-radius: 10px;
+    width: 100%;
 }
 
 .testimony-love {
@@ -42,4 +43,115 @@
 #love-yal-pic:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.98);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 550px) {
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+
+    .quote-container > p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .goback {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        justify-self: flex-end;
+    }
+}
+
+/* An Even Smaller Phone */
+@media screen and (max-width: 390px) {
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+}
+
+
+/* An Even, even Smaller Phone */
+@media screen and (max-width: 320px) {
+    /* Love */
+
+    .sub-section_testimony-love {
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+    }
+
+    .love-pic-container {
+        width: 100%;
+    }
+
+    #love-yal-pic {
+        height: 15rem;
+    }
+
+    .testimony-love {
+        margin-top: 3em;
+        padding: 0;
+    }
+
+    .quote-container {
+        width: 100%;
+    }
+
+    .testimony-love {
+        padding: 1rem;
+    }
+
+    .testimony-love>p {
+        font-size: 18px;
+
+    }
 }
