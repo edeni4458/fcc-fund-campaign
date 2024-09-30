@@ -1,4 +1,3 @@
-
 .sub-section_testimony-love {
     display: flex;
     justify-content: space-around;
@@ -17,7 +16,7 @@
 }
 
 .love-pic-container {
-    width: 30rem;
+    width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -149,5 +148,18 @@
     .testimony-love>p {
         font-size: 18px;
 
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sub-section_testimony-love {
+        width: 100%;
+        height: 20%;
+    }
+
+    #love-yal-pic {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
     }
 }

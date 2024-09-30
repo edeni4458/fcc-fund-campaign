@@ -43,115 +43,109 @@
 }
 
 @media screen and (max-width: 550px) {
-    /* Live Part */
+    .sectionII_main-container {
+        padding: 12px;
+    }
 
-    .sub-section_testimony-live {
-        padding: 10px;
+    .sectionII_title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .main_photo_mission-container {
         flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 25rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo_mission-container>img {
         height: 100%;
         width: 100%;
-        background-position: top;
-    }
-
-    .live-pic-container {
-        width: 80%;
-        height: 80%;
-        margin-left: 2rem;
-    }
-
-    #live-fam-pic {
-        height: 100%;
-        width: 100%;
-        /* margin-left: 2rem; */
-    }
-}
-
-/* An Even Smaller Phone */
-@media screen and (max-width: 390px) {
-    /* Live Part */
-
-    .sub-section_testimony-live {
-        padding: 10px;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        background-position: top;
-    }
-
-    .live-pic-container {
-        width: 80%;
-        height: 80%;
-        margin-left: 2rem;
-    }
-
-    #live-fam-pic {
-        height: 100%;
-        width: 100%;
-        /* margin-left: 2rem; */
-    }
-
-}
-
-
-/* An Even, even Smaller Phone */
-@media screen and (max-width: 320px) {
-    /* Live Part */
-
-    .sub-section_testimony-live {
-        padding: 10px;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        background-position: top;
-    }
-
-    .live-pic-container {
-        width: 80%;
-        height: 80%;
-        margin-left: 1.2rem;
-    }
-
-    #live-fam-pic {
-        height: 100%;
-        width: 100%;
-    }
-
-    .testimony-live>p {
-        font-size: 18px;
-    }
-
-    /* Love */
-
-    .sub-section_testimony-love {
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        background-position: top;
-    }
-
-    .love-pic-container {
-        width: 100%;
-    }
-
-    #love-yal-pic {
-        height: 15rem;
-    }
-
-    .testimony-love {
-        margin-top: 3em;
-        padding: 0;
     }
 
     .quote-container {
         width: 100%;
     }
 
-    .testimony-love {
-        padding: 1rem;
+    .quote-container > p {
+        font-size: 19px;
+        line-height: 28px;
     }
 
-    .testimony-love>p {
-        font-size: 18px;
+    .goback {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        justify-self: flex-end;
+    }
+}
 
+/* An Even Smaller Phone */
+@media screen and (max-width: 390px) {
+    .sectionII_main-container {
+        padding: 10px;
+        /* margin-top: -5em; */
+    }
+
+    .sectionII_title {
+        text-align: center;
+
+    }
+
+    .main_photo_mission-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .photo_mission-container>img {
+        height: 100%;
+        width: 100%;
+    }
+    .quote-container {
+        width: 100%;
+    }
+}
+
+
+/* An Even, even Smaller Phone */
+@media screen and (max-width: 320px) {
+    .sectionII_main-container {
+        padding: 10px;
+    }
+
+    .sectionII_title {
+        text-align: center;
+    }
+
+    .main_photo_mission-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 40rem;
+    }
+
+    .photo_mission-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo_mission-container>img {
+        height: 10rem;
+        width: 6.8rem;
+    }
+
+    .quote-container {
+        width: 100%;
     }
 }
