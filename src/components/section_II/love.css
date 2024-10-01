@@ -3,19 +3,17 @@
     justify-content: space-around;
     background-color: white;
     margin: 0 auto;
-    border: 0.2px solid lightgray;
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 2rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
-    height: 30rem;
-    width: 75rem;
+    height: 25rem;
+    width: 60rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
     background-position: left;
     opacity: 0;
     transform: translateY(100px);
-
 }
 
 .animate {
@@ -25,22 +23,23 @@
 }
 
 .love-pic-container {
-    width: 100%;
+    width: 55%;
     overflow: hidden;
     border-radius: 10px;
+    margin-right: 3em;
 }
 
 #love-yal-pic {
     height: 25rem;
+    width: 35rem;
     transition: transform .5s ease;
     border-radius: 10px;
-    width: 35rem;
 }
 
 
 .testimony-love>p {
-    margin-top: 10px;
     font-size: 20px;
+    line-height: 1px;
     font-weight: 600;
     text-shadow: 0 0 5px lightgray;
 }

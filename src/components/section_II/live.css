@@ -9,14 +9,13 @@
     margin-top: 3rem;
     padding: 2rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
-    height: 30rem;
-    width: 75rem;
+    height: 25rem;
+    width: 60rem;
     background-image: url(../z_images/bg-img-2.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     opacity: 0;
     transform: translateY(100px);
-
 }
 
 
@@ -28,6 +27,7 @@
 
 .testimony-live>p {
     font-size: 20px;
+    line-height: 1px;
     font-weight: 600;
     text-shadow: 0 0 5px lightgray;
 }
