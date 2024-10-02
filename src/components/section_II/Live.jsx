@@ -4,7 +4,8 @@ import { useInView } from 'react-intersection-observer'
 import liveFam from '../z_images/our-values-bg.jpg'
 import './live.css'
 
-const Live = () => {    const ref = useRef();
+const Live = () => {
+    const ref = useRef();
 
     const { ref: inViewRef, inView } = useInView({
         threshold: 0,
@@ -24,6 +25,9 @@ const Live = () => {    const ref = useRef();
 
     return (
         <div ref={setRefs} className={`sub-section_testimony-live ${inView ? 'animate' : ''}`}>
+            <div className='live-pic-container'>
+                <img id='live-fam-pic' src={liveFam} alt='' />
+            </div>
             <div className='testimony-live'>
                 <p>Live: Like a Family</p>
                 <ol className='list-know'>
@@ -53,9 +57,6 @@ const Live = () => {    const ref = useRef();
                     </li>
                     <li>Men’s Retreat</li>
                 </ol>
-            </div>
-            <div className='live-pic-container'>
-                <img id='live-fam-pic' src={liveFam} alt='' />
             </div>
         </div>
     )

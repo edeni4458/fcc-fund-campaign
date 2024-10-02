@@ -20,8 +20,8 @@ export default function Check() {
         <div className='chkdv'>
           <h4>Via Check:</h4>
           <p>Make check out to: Fordham Community Church</p>
-          <p>Include memo for: FCC building Fund </p>
-          <p>Mail to: 1455 Waring Avenue, Bronx NY 10469</p>
+          <p>Include memo for: FCC Building Fund </p>
+          <p>Mail to: 1455 Waring Avenue, Bronx, NY 10469</p>
           <button id='check-btn' onClick={() => closeModal()}>Close</button>
         </div>
       </dialog>

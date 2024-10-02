@@ -4,9 +4,9 @@
     gap: 10px;
     background-color: white;
     margin: 0 auto;
-    border: 0.2px solid lightgray;
+    /* border: 0.2px solid lightgray; */
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 2rem;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.632); */
     height: 25rem;
@@ -33,14 +33,15 @@
 }
 
 .live-pic-container {
-    width: 20rem;
+    width: 65%;
     overflow: hidden;
     border-radius: 10px;
+    margin-right: 2em;
 }
 
 #live-fam-pic {
     height: 25rem;
-    width: 20rem;
+    width: 35rem;
     transition: transform .5s ease;
     border-radius: 10px;
 }
@@ -59,20 +60,25 @@
         height: 100%;
         width: 95%;
         background-position: top;
-        padding: 1em;
+        padding: 10px;
+        gap: 2em;
     }
 
     .live-pic-container {
-        width: 80%;
-        height: 80%;
-        margin-left: 2rem;
-
+        width: 100%;
     }
 
     #live-fam-pic {
         height: 100%;
         width: 100%;
         /* margin-left: 2rem; */
+    }
+
+    .testimony-live {
+        padding: 0;
+    }
+    .testimony-live>p {
+        /* padding: 5em; */
     }
 
 }
@@ -90,6 +96,7 @@
         height: 100%;
         width: 95%;
         background-position: top;
+        
     }
 
     .live-pic-container {
@@ -115,6 +122,7 @@
         height: 100%;
         width: 95%;
         background-position: top;
+        
     }
 
     .live-pic-container {
