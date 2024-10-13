@@ -133,7 +133,7 @@ const EmailJs = () => {
                             <div className='label-container'>
                                 <label name='number'>Contact Number</label>
                             </div>
-                            <input required onChange={handlePhone} type="number" value={number} />
+                            <input required onChange={handlePhone} type="text" value={number} />
                             {!isValid && number && (<p style={{ color: 'red' }}>Invalid phone number format: 10 digits</p>)}
                             <div className='label-container'>
                                 <label name='amount'>Amount</label>
