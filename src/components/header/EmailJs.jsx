@@ -55,7 +55,7 @@ const EmailJs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const serviceId = 'emmanuel_set-up'
+        const serviceId = 'fcc-build-fund'
         const templateId = 'fcc-fund-camp'
         const publicKey = 'wKhF1Jo161NykecSP'
         const templateParams = {
