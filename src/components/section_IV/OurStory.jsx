@@ -34,7 +34,7 @@ const OurStory = () => {
                     <img className='img_edit' src={ourStory1} alt='taken during a bible study' />
                 </div>
                 <div className='para-and-image'>
-                    <p>We are awed at what God has done<br/> as FCC is now 4 years old and how<br/> the Lord has established this new<br/>church.</p>
+                    <p>We are awed at what God has done<br/> as FCC is now 5 years old and how<br/> the Lord has established this new<br/>church.</p>
                     <img className='img_edit' src={ourStory2} alt='taken during a Sunday service' />
                 </div>
             </div>
